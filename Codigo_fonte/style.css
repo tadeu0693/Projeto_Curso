@@ -80,3 +80,7 @@ section {
     text-align: center;
 
 }
+.duvidas{
+    display: flex;
+    justify-content: space-around ;
+}
