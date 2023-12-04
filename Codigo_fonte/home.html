@@ -4,51 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold Beer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<br>
-
-    
-    <center><h1>Gold Beer</h1></center>
-        
-
-    <img src="/img/logo.jpg" alt=""width= 100px height="100px"> 
-
-    <div>
-        <p>Ola Seja bem vindo, realize seu login abaixo:</p>
-        
-       
-
-        <br><label for="Login">Login:</label>
-        <input type=" text" id="Login" name="Login"><br>
-
-        <br><label for="Senha">Senha:</label>
-        <input type="password" id="Senha" name="Senha"><br>
-
-        <br><label for="Pesquisa">Pesquisa:</label>
-        <input type=" text" id="Pesquisa" name="Pesquisa"><br>
-
-        
-    
-    </div>
-
-        <br><img src="/img/imagem_carrocel.jpg" width= "1315" height="400"><br> 
-
-    <br><div>
-        
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./cervejas.html">Cervejas</a></li>
-        <li><a href="./promocao.html">Promoções</a></li>
-        <li><a href="./area_do_cliente.html">Area do cliente</a></li>
-        <li><a href="./sobre_nos.html">Sobre nos</a></li>
-        <li><a href=".fale_conosco.html">Fale Conosco</a></li>
-
-    </div>
-    
-    <br><img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
-    <p>Cerveja heineken 600 ML</p>
-    <p><dir><a href="./area_do_cliente.html" >comprar</a></p></dir>
 
 </body>
+    <header>
+        <nav>
+
+            <img class="logo" src="/img/logo.jpg" alt="">
+            <h1>GOLD BEER</h1>
+        
+            <div class="usuario">
+                <label for="Login">Login:</label>
+                <input type=" text" id="Login" name="Login">
+                <label for="Senha">Senha:</label>
+                <input type="password" id="Senha" name="Senha">
+                <p><a type="text" ><input type="button" value="Entrar"></a></p>
+            </div>
+        
+        
+        </nav>
+    
+    </header>
+
+    <div class="pes">
+
+        <input type=" text" id="Pesquisa" name="Pesquisa">
+        <p><a type="text"><input type="button" value="Pesquisa"></a></p>
+
+    </div>
+    <div>
+        <img class="banner" src="/img/imagem_carrocel.jpg" alt="">
+    </div>
+    <div class="produtos">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./cervejas.html">Cervejas</a></li>
+            <li><a href="./promocao.html">Promoções</a></li>
+            <li><a href="./area_do_cliente.html">Area do cliente</a></li>
+            <li><a href="./sobre_nos.html">Sobre nos</a></li>
+            <li><a href=".fale_conosco.html">Fale Conosco</a></li>
+        </ul>
+
+    </div>
+    <div><h3 class="pref">As bebidas preferida</h3></div>
+
+    <section>
+        
+        <div>
+                <img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
+                <p>Cerveja heineken 600 ML</p>
+                <p><a href="./area_do_cliente.html" ><input type="button" value="Comprar por R$8,00"></a></p>
+        </div>
+        <div>
+            <img src="/img/imagens/Serra_malte.jpg"  alt=" Cerveja Serra Malte" width="220" height="220">
+            <p>Cerveja Serra Malte</p>
+            <p><a href="./area_do_cliente.html" ><input type="button" value="comprar por R$4,50"></a></p>
+        </div>
+        <div>
+            <img src="/img/imagens/skol269.jpg" alt="Cerveja skol 269ml" width="220" height="220">
+            <br><p>Cerveja Skol 269 ML</p>
+            <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="comprar por R$3,50"></a></p>
+        </div>
+        <div>
+            <img src="/img/imagens/original269ML.jpg" alt="Cerveja Original 269ML" width="220" height="220">
+            <p>Cerveja Original 269 ML</p>
+            <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="Comprar por 4,50"></a></p>
+        </div>
+
+    </section>
     
 </body>
 </html>
