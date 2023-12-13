@@ -3,16 +3,9 @@
     padding: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40rem;
-    align-items: center;
+header {
     background-color: #f9cb73;
-    color: rgb(0, 0, 0);
-    height: 6rem;
-    padding:  0.2.4rem;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 .logo {
