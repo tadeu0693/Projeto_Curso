@@ -4,74 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold Beer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 </body>
-    <header>
+        <header>
         <nav>
-
-            <img class="logo" src="/img/logo.jpg" alt="">
-            <h1>GOLD BEER</h1>
-        
-            <div class="usuario">
-                <label for="Login">Login:</label>
-                <input type=" text" id="Login" name="Login">
-                <label for="Senha">Senha:</label>
-                <input type="password" id="Senha" name="Senha">
-                <p><a type="text" ><input type="button" value="Entrar"></a></p>
+            <span><img id="logo" src="/img/logo.jpg" alt="logo"></span>
+            <h1 id="titulo">Bar Beer</h1>
+            <div id="login">
+                <h3>Login</h3>
+                <input type="text">
+                <input type="password">
+                <label for=""><input type="button" value="Login"></label>
             </div>
-        
-        
         </nav>
+        <div id="menu-pesquisa">
+            <ol class="categorias">
     
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./cervejas.html">Cervejas</a></li>
+                <li><a href="./promocao.html">Promoções</a></li>
+                <li><a href="./area_do_cliente.html">Area do cliente</a></li>
+                <li><a href="./sobre.nos.html">Sobre nos</a></li>
+                
+            </ol>
+            <div class="barra-pesquisa">
+                <input type="text">
+                <button class="botao-pesquisa">
+                    <i>Buscar</i>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <div class="pes">
+    <main>       
+        <section>
+            
+            <img class="banner" src="/img/imagem_carrocel.jpg" alt="banner promocional">
 
-        <input type=" text" id="Pesquisa" name="Pesquisa">
-        <p><a type="text"><input type="button" value="Pesquisa"></a></p>
+            <div><h3 class="pref">As bebidas preferida</h3></div>
+            
+            <section class="produtos">
+                
+                <div>
+                        <img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
+                        <div class="nome-preço">
 
-    </div>
-    <div>
-        <img class="banner" src="/img/imagem_carrocel.jpg" alt="">
-    </div>
+                            <p>Cerveja heineken 600 ML</p>
+                            <p><a href="./area_do_cliente.html" ><input type="button" value="Comprar por R$8,00"></a></p>
 
-    <div>
-        <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./cervejas.html">Cervejas</a></li>
-            <li><a href="./promocao.html">Promoções</a></li>
-            <li><a href="./area_do_cliente.html">Area do cliente</a></li>
-            <li><a href="./sobre.nos.html">Sobre nos</a></li>
-        </ul>
+                        </div>
+                </div>
+                <div>
+                    <img src="/img/imagens/Serra_malte.jpg"  alt=" Cerveja Serra Malte" width="220" height="220">
+                    <div class="nome-preço">
 
-    </div>
-    <div><h3 class="pref">As bebidas preferida</h3></div>
+                        <p>Cerveja Serra Malte</p>
+                        <p><a href="./area_do_cliente.html" ><input type="button" value="comprar por R$4,50"></a></p>
 
-    <section>
-        
-        <div>
-                <img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
-                <p>Cerveja heineken 600 ML</p>
-                <p><a href="./area_do_cliente.html" ><input type="button" value="Comprar por R$8,00"></a></p>
-        </div>
-        <div>
-            <img src="/img/imagens/Serra_malte.jpg"  alt=" Cerveja Serra Malte" width="220" height="220">
-            <p>Cerveja Serra Malte</p>
-            <p><a href="./area_do_cliente.html" ><input type="button" value="comprar por R$4,50"></a></p>
-        </div>
-        <div>
-            <img src="/img/imagens/skol269.jpg" alt="Cerveja skol 269ml" width="220" height="220">
-            <br><p>Cerveja Skol 269 ML</p>
-            <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="comprar por R$3,50"></a></p>
-        </div>
-        <div>
-            <img src="/img/imagens/original269ML.jpg" alt="Cerveja Original 269ML" width="220" height="220">
-            <p>Cerveja Original 269 ML</p>
-            <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="Comprar por 4,50"></a></p>
-        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/imagens/skol269.jpg" alt="Cerveja skol 269ml" width="220" height="220">
+                    <div class="nome-preço">
 
-    </section>
+                        <p>Cerveja Skol 269 ML</p>
+                        <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="comprar por R$3,50"></a></p>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/imagens/original269ML.jpg" alt="Cerveja Original 269ML" width="220" height="220">
+                    <div class="nome-preço">
+
+                        <p>Cerveja Original 269 ML</p>
+                        <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="Comprar por 4,50"></a></p>
+
+                    </div>
+                    
+            </div>
+            
+            </section>
+             <section class="produtos">
+                
+                <div>
+                        <img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
+                        <div class="nome-preço">
+
+                            <p>Cerveja heineken 600 ML</p>
+                            <p><a href="./area_do_cliente.html" ><input type="button" value="Comprar por R$8,00"></a></p>
+
+                        </div>
+                </div>
+                <div>
+                    <img src="/img/imagens/Serra_malte.jpg"  alt=" Cerveja Serra Malte" width="220" height="220">
+                    <div class="nome-preço">
+
+                        <p>Cerveja Serra Malte</p>
+                        <p><a href="./area_do_cliente.html" ><input type="button" value="comprar por R$4,50"></a></p>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/imagens/skol269.jpg" alt="Cerveja skol 269ml" width="220" height="220">
+                    <div class="nome-preço">
+
+                        <p>Cerveja Skol 269 ML</p>
+                        <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="comprar por R$3,50"></a></p>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/imagens/original269ML.jpg" alt="Cerveja Original 269ML" width="220" height="220">
+                    <div class="nome-preço">
+
+                        <p>Cerveja Original 269 ML</p>
+                        <p><a href="/Codigo_fonte/area_do_cliente.html"><input type="button" value="Comprar por 4,50"></a></p>
+
+                    </div>
+                    
+            </div>
+            
+            </section>
+
+        </section>
+    </main>
     
     <footer>
     
