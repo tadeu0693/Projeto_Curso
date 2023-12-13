@@ -32,14 +32,26 @@ nav {
     width: 90px;
 }
 
-input {
-    border-radius: 8px;
+.botao-compra {
+    border-radius: 10px;
+    width: 9rem;
+    border: solid rgb(253, 194, 85) 3px;
 }
 
 #login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2px;
+    width: 150px;
+}
+
+.campo-preenchimento {
+    border-radius: 10px;
+}
+
+.botao-login {
+    border-radius: 5px;
 }
 
 #menu-pesquisa {
@@ -73,6 +85,7 @@ a {
     padding-top: 109px;
 }
 
+
 .sub-titulo {
     padding: 100px;
     text-align: center;
@@ -80,10 +93,12 @@ a {
     padding-bottom: 200px;
 }
 
+
 .produtos-1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-weight: bold;
 }
 
 .produtos-2 {
@@ -91,10 +106,44 @@ a {
     align-items: center;
     justify-content: space-evenly;
     margin-top: -80px;
+    font-weight: bold;
 }
 
 .nome-preço {
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
     padding: 10px;
+    line-height: 35px;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    background-color: rgb(253, 194, 85);
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 3px;
+    align-items: center;
+}
+
+.pagamentos {
+    display: flex;
+    flex-direction: column;
+   gap: 2rem;
+}
+
+.endereço {
+     display: flex;
+    flex-direction: column;
+   gap: 2rem;
 }
