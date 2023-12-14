@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/carrinho.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <span><img id="logo" src="/img/logo.jpg" alt="logo"></span>
+
+            <h1 id="titulo">Bar Beer</h1>
+
+            <div id="login">
+                <h3>Login</h3>
+                <input class="campo-preenchimento" type="text">
+                <input class="campo-preenchimento" type="password">
+                <label for=""><input class="botao-login" type="button" value="Login"></label>
+            </div>
+        </nav>
+
+        <div id="menu-pesquisa">
+
+            <ol class="categorias">
+    
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./cervejas.html">Cervejas</a></li>
+                <li><a href="./promocao.html">Promoções</a></li>
+                <li><a href="./area_do_cliente.html">Area do cliente</a></li>
+                <li><a href="./sobre.nos.html">Sobre nos</a></li>
+                
+            </ol>
+
+            <div class="barra-pesquisa">
+
+                <input class="campo-preenchimento" type="text">
+                <button class="botao-pesquisa">
+                    <i>Buscar</i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+    <main>
+        <div id="formas-pagamento">
+            <h3>Formas de pagamentos</h3>
+    
+                <form action="" class="opcoes-pagamen">
+                    <input type="checkbox" name="pix" id="pix">
+                    <label for="">Pix</label>
+                    <input type="checkbox" name="cartao" id="cartao">
+                    <label for="">Cartão</label>
+                    <input type="checkbox" name="boleto" id="boleto">
+                    <label for="">Boleto</label>
+    
+                    <label for="">Nome do titular:</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="">CPF do titular:</label>
+                    <input type="number" name="number" id="number">
+                    <label for="">Numero do cartão:</label>
+                    <input type="number" name="number" id="number">
+                    <label for="">CVC:</label>
+                    <input type="number" name="number" id="number">
+    
+                </form>
+        </div>
+        <div class="frete-total-finalizar">
+            <label for="">Frete</label>
+            <label for="">Total</label>
+            <button id="finalizar-compra-botao">Finalizar Compra</button>
+        </div>
+        
+        <section id="carrinho">
+            
+            <h2>Meu Carrinho</h2>
+            
+            
+        </section>
+        
+        <section id="produtos-carrinho">
+            <div>
+                <img src="/img/heineken600.jpg" alt="Cerveja heineken 600ml">
+                
+                <p>CERVEJA HEINEKEN 600ML</p>
+                <div class="quantidade">
+                    
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number">
+                    <div class="adicionar-remove">
+                        
+                        <button>Adicionar</button>
+                        <button>Remover</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <img src="/img/imagens/original269ML.jpg" alt="Cerveja original 269ml">
+                
+                <p>CERVEJA ORIGINAL 269ML</p>
+                <div class="quantidade">
+                    
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number">
+                    <div class="adicionar-remove">
+                        
+                        <button>Adicionar</button>
+                        <button>Remover</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <form action="">
+    
+                <h2>Duvidas?</h2>
+
+            
+                <label for="nome">Nome:</label>
+                <input class="campo-preenchimento" type="text" id="nome" name="nome">
+                <label for="telefone">Telefone:</label>
+                <input class="campo-preenchimento" type="tel" id="telefone" name="telefone">
+                <label for="Email">Email:</label>
+                <input class="campo-preenchimento" type="email" id="Email" name="Email">
+                <label for="mensagem">Mensagem:</label>
+                <input class="campo-preenchimento" type="msg"id=mesagem size="20" >
+                <input type="button" value="Enviar">
+                
+            </form>
+
+
+
+    <div class="pagamentos">
+        <h2>Formas de pagamentos</h2>
+        <img id="cartoes" src="/img/imagens/payment-mobile_2021.png" alt="">
+    </div>
+
+    <div class="endereço">
+        <h2>Endereço</h2>
+        <a href="https://www.google.com.br/maps/preview" target="_blank" rel="external"> <img src="/img/imagens/mapa.png" alt="mapa loja"></a>
+    </div>
+
+
+    <div class="redes">
+
+        <h2>Siga nossa redes</h2>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/free-facebook-logo-png.png" alt="logo facebook" width="75"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="external"> <img src="/img/imagens/instagram.png" alt="logo instagram" width="43"></a>
+        <a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsap.png" alt="logo whatsap" width="45"></a>
+    
+    </div>
+
+
+    </footer>
+</body>
+</html>
