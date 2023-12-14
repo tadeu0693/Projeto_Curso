@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(253, 194, 85);
+    align-items: center;
+    justify-content: space-around;
+    gap: 30rem;
+}
+
+.botao-pesquisa {
+    border-radius: 6px;
+}
+
+#titulo {
+    font-size: 50px;
+}
+
+#logo {
+    display: flex;
+    width: 90px;
+}
+
+.botao-compra {
+    border-radius: 10px;
+    width: 9rem;
+    border: solid rgb(253, 194, 85) 3px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 150px;
+}
+
+.campo-preenchimento {
+    border-radius: 10px;
+}
+
+.botao-login {
+    border-radius: 5px;
+}
+
+#menu-pesquisa {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 4.1rem;
+}
+
+.categorias {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.barra-pesquisa {
+    display: flex;
+    gap: 5px;
+    padding: 7px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.banner-promocoes {
+    width: 100%;
+    height: 600px;
+    padding-top: 109px;
+    padding-bottom: 50px;
+
+}
+
+
+.sub-titulo {
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.sub-titulo-background {
+    border-radius: 40px;
+    margin-left: 700px;
+    background-color: red;
+    width: 500px;
+}
+
+.produtos-gerais {
+    padding-top: 150px;
+}
+
+.produtos-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.produtos-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -80px;
+    font-weight: bold;
+}
+
+.nome-preço {
+    text-align: center;
+    margin-bottom: 250px;
+    padding: 10px;
+    line-height: 35px;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    background-color: rgb(253, 194, 85);
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 3px;
+    align-items: center;
+}
+
+.pagamentos {
+    display: flex;
+    flex-direction: column;
+   gap: 2rem;
+}
+
+.endereço {
+     display: flex;
+    flex-direction: column;
+   gap: 2rem;
+}
