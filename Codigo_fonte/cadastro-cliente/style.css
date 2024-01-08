@@ -21,7 +21,8 @@ nav {
 }
 
 .botao-pesquisa {
-    border-radius: 6px;
+    border-radius: 5px;
+    width: 120%;
 }
 
 #titulo {
@@ -43,16 +44,24 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
+    justify-content: center;
+    gap: 5px;
     width: 150px;
+    
 }
 
 .campo-preenchimento {
     border-radius: 10px;
 }
 
-.botao-login {
+.botao {
     border-radius: 5px;
+    width: 120%;
+}
+.botao:last-of-type {
+    border-radius: 5px;
+    width: 120%;
+    margin-bottom: 1px;
 }
 
 #menu-pesquisa {
@@ -184,8 +193,13 @@ form {
     width: 150px;
     gap: 3px;
     align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
 }
-
+.cadastrar{
+    margin-bottom: 1rem;
+}
 .pagamentos {
     display: flex;
     flex-direction: column;
