@@ -9,21 +9,41 @@
 <body>
     <header>
         <nav>
+            <span><img id="logo" src="/img/logo.jpg" alt="logo"></span>
 
-            <img class="logo" src="/img/logo.jpg" alt="">
-            <h1>GOLD BEER</h1>
-        
-            <div class="usuario">
-                <label for="Login">Login:</label>
-                <input type=" text" id="Login" name="Login">
-                <label for="Senha">Senha:</label>
-                <input type="password" id="Senha" name="Senha">
-                <p><a type="text" ><input type="button" value="Entrar"></a></p>
+            <h1 id="titulo">Bar Beer</h1>
+
+            <div id="login">
+                <h3>Login</h3>
+                <input class="campo-preenchimento" type="text">
+                <input class="campo-preenchimento" type="password">
+                <label for=""><input class="botao-login" type="button" value="Login"></label>
             </div>
-        
-        
         </nav>
+        <div id="menu-pesquisa">
+
+            <ol class="categorias">
     
+                <li><a href="/Codigo_fonte/home/index.html">Home</a></li>
+                <li><a href="/Codigo_fonte/cervejas/index.html">Cervejas</a></li>
+                <li><a href="/Codigo_fonte/promocao/index.html">Promoções</a></li>
+                <li><a href="/Codigo_fonte/cadastro-cliente/index.html">Area do Cliente</a></li>
+                <li><a href="/Codigo_fonte/carrinho/index.html">Meu Carrinho</a></li>
+                <li><a href="/Codigo_fonte/sobre-nos/index.html">Sobre Nós</a></li>
+                
+            </ol>
+
+            <div class="barra-pesquisa">
+
+                <input class="campo-preenchimento" type="text">
+                <button class="botao-pesquisa">
+                    <i>Buscar</i>
+                </button>
+
+            </div>
+
+        </div>
+
     </header>
 
     <div class="pes">
@@ -37,9 +57,9 @@
             <li><a href="/Codigo_fonte/home/index.html">Home</a></li>
                 <li><a href="/Codigo_fonte/cervejas/index.html">Cervejas</a></li>
                 <li><a href="/Codigo_fonte/promocao/index.html">Promoções</a></li>
-                <li><a href="/Codigo_fonte/cadastro-cliente/index.html">Area do cliente</a></li>
+                <li><a href="/Codigo_fonte/cadastro-cliente/index.html">Area do Cliente</a></li>
                 <li><a href="/Codigo_fonte/carrinho/index.html">Meu Carrinho</a></li>
-                <li><a href="/Codigo_fonte/sobre-nos/index.html">Sobre nos</a></li>
+                <li><a href="/Codigo_fonte/sobre-nos/index.html">Sobre Nós</a></li>
         </ul>
 
         <form action="">
@@ -72,40 +92,45 @@
 
         </form>
 <footer>
+    <form action="">
     
-    <div class="duvidas">
-        <h1>Tire suas Duvidas</h1>
-        
+        <h2>Duvidas?</h2>
+
+    
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
+        <input class="campo-preenchimento" type="text" id="nome" name="nome">
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone">
+        <input class="campo-preenchimento" type="tel" id="telefone" name="telefone">
         <label for="Email">Email:</label>
-        <input type="email" id="Email" name="Email">
+        <input class="campo-preenchimento" type="email" id="Email" name="Email">
         <label for="mensagem">Mensagem:</label>
-        <input type="msg"id=mesagem size="20" >
+        <input class="campo-preenchimento" type="msg"id=mesagem size="20" >
         <input type="button" value="Enviar">
-            
-    </div>
-    
-    <div class="endereço">
-        <h2>Endereço</h2>
-        <a href="https://www.google.com.br/maps/preview" target="_blank" rel="external"> <img src="/img/imagens/mapa.png" alt="mapa loja"></a>
-    </div>
-    <div class="pagamentos">
-        <h2>Formas de pagamentos</h2>
-        <img id="cartoes" src="/img/imagens/payment-mobile_2021.png" alt="">
-    </div>
-    
-
-    <div class="redes">
-
-        <h2>Siga nossa redes</h2>
-        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/free-facebook-logo-png.png" alt="logo facebook" width="75"></a>
-        <a href="https://www.instagram.com/" target="_blank" rel="external"> <img src="/img/imagens/instagram.png" alt="logo instagram" width="43"></a>
-        <a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsap.png" alt="logo whatsap" width="45"></a>
         
-    </div>
+    </form>
+
+
+
+<div class="pagamentos">
+<h2>Formas de pagamentos</h2>
+<img id="cartoes" src="/img/imagens/payment-mobile_2021.png" alt="">
+</div>
+
+<div class="endereço">
+<h2>Endereço</h2>
+<a href="https://www.google.com.br/maps/preview" target="_blank" rel="external"> <img src="/img/imagens/mapa.png" alt="mapa loja"></a>
+</div>
+
+
+<div class="redes">
+
+<h2>Siga nossa redes</h2>
+<a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/free-facebook-logo-png.png" alt="logo facebook" width="75"></a>
+<a href="https://www.instagram.com/" target="_blank" rel="external"> <img src="/img/imagens/instagram.png" alt="logo instagram" width="43"></a>
+<a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsap.png" alt="logo whatsap" width="45"></a>
+
+</div>
+
 
 </footer>
 </body>
