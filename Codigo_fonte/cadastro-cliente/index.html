@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do cliente</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/Codigo_fonte/cadastro-cliente/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,8 @@
                 <h3>Login</h3>
                 <input class="campo-preenchimento" type="text">
                 <input class="campo-preenchimento" type="password">
-                <label for=""><input class="botao-login" type="button" value="Login"></label>
+                <label for="botao"><input class="botao" type="button" value="Login"></label>
+                <label for="botao"><input class="botao" type="button" value="Esqueci a senha"></label>
             </div>
         </nav>
         <div id="menu-pesquisa">
@@ -65,26 +67,26 @@
         <form action="">
 
             <ol class="form">
-                    <h2>Cadastre-se</h2>
-                    <label for="">Nome:</label>
+                    <h2 class="cadastrar">Cadastre-se</h2>
+                    <label for="name">Nome:</label>
                     <input type="text">
                     <br>
-                    <label for="">Nascimento:</label>
+                    <label for="birth">Nascimento:</label>
                     <input type="date">
                     <br>
                     <label for="tel">Telefone:</label>
                     <input type="number">
                     <br>
-                    <label for="">CPF:</label>
+                    <label for="docs">CPF:</label>
                     <input type="number">
                     <br>
-                    <label for="">E-mail:</label>
+                    <label for="mail">E-mail:</label>
                     <input type="text">
                     <br>
-                    <label for="">Senha:</label>
+                    <label for="password">Senha:</label>
                     <input type="text">
                     <br>
-                    <label for="">Confimar senha:</label>
+                    <label for="conf-password">Confimar senha:</label>
                     <input type="text">
                     <br>
                     <input type="button" value="Concluir cadastro">
