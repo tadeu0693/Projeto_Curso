@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(253, 194, 85);
+    align-items: center;
+    justify-content: space-around;
+    gap: 30rem;
+}
+
+.botao-pesquisa {
+    border-radius: 5px;
+    width: 120%;
+}
+
+#titulo {
+    font-size: 50px;
+}
+
+#logo {
+    display: flex;
+    width: 90px;
+}
+
+.botao-compra {
+    border-radius: 10px;
+    width: 9rem;
+    border: solid rgb(253, 194, 85) 3px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 150px;
+    
+}
+
+.campo-preenchimento {
+    border-radius: 10px;
+}
+
+.botao {
+    border-radius: 5px;
+    width: 120%;
+}
+.botao:last-of-type {
+    border-radius: 5px;
+    width: 120%;
+    margin-bottom: 1px;
+}
+
+#menu-pesquisa {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 4.1rem;
+}
+
+.categorias {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.barra-pesquisa {
+    display: flex;
+    gap: 5px;
+    padding: 7px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.banner-promocoes {
+    width: 100%;
+    height: 600px;
+    padding-top: 109px;
+}
+
+
+.sub-titulo {
+    padding: 100px;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 200px;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+#carrinho {  
+    margin-top: -400px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#produtos-carrinho {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 300px;
+    padding-top: 10px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.opcoes-pagamen {
+    line-height: 30px;
+}
+
+.quantidade {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    padding-top: -20px;
+}
+
+.adicionar-remove {
+    display: flex;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+#formas-pagamento {
+    font-size: 15px;
+    line-height: 85px;
+    padding-left: 50px;
+    border: solid black 2px;
+    border-radius: 30px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    left: 1100px;
+    top: 400px;
+}
+
+.frete-total-finalizar {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 45px;
+    padding-left: 50px;
+    border: solid black 2px;
+    border-radius: 30px;
+    position: relative;
+    height: 150px;
+    width: 500px;
+    left: 1100px;
+    top: 420px;
+}
+
+#finalizar-compra-botao {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+footer {
+    display: flex;
+    background-color: rgb(253, 194, 85);
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 3px;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.cadastrar{
+    margin-bottom: 1rem;
+}
+.pagamentos {
+    display: flex;
+    flex-direction: column;
+   gap: 2rem;
+}
+
+.endereço {
+     display: flex;
+    flex-direction: column;
+   gap: 2rem;
+}
