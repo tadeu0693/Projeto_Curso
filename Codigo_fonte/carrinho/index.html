@@ -50,97 +50,62 @@
     </header>
     
     <main>
-        <div id="formas-pagamento">
-            <h3>Formas de pagamentos</h3>
-    
-                <form action="" class="opcoes-pagamen">
-                    <input type="checkbox" name="pix" id="pix">
-                    <label for="">Pix</label>
-                    <input type="checkbox" name="cartao" id="cartao">
-                    <label for="">Cartão</label>
-                    <input type="checkbox" name="boleto" id="boleto">
-                    <label for="">Boleto</label>
-    
-                    <label for="">Nome do titular:</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="">CPF do titular:</label>
-                    <input type="number" name="number" id="number">
-                    <label for="">Numero do cartão:</label>
-                    <input type="number" name="number" id="number">
-                    <label for="">CVC:</label>
-                    <input type="number" name="number" id="number">
-    
-                </form>
-        </div>
-        <div class="frete-total-finalizar">
-            <label for="">Frete</label>
-            <label for="">Total</label>
-            <button id="finalizar-compra-botao">Finalizar Compra</button>
-        </div>
-        
-        <section id="carrinho">
-            
-            <h2>Meu Carrinho</h2>
-            
-            
-        </section>
-        
-        <section id="produtos-carrinho">
-            <div>
-                <img src="/img/heineken600.jpg" alt="Cerveja heineken 600ml">
-                
-                <p>CERVEJA HEINEKEN 600ML</p>
-                <div class="quantidade">
-                    
-                    <label for="quantidade">Quantidade</label>
-                    <input type="number">
-                    <div class="adicionar-remove">
-                        
-                        <button>Adicionar</button>
-                        <button>Remover</button>
-                    </div>
-                    
-                </div>
+        <div class="titulo-carrinho">Meu Carrinho</div>
+        <section>
+            <div class="subtitulo">
+                <h4>Forma de Pagamentos</h4>
             </div>
-            <div>
-                <img src="/img/imagens/original269ML.jpg" alt="Cerveja original 269ml">
-                
-                <p>CERVEJA ORIGINAL 269ML</p>
-                <div class="quantidade">
-                    
-                    <label for="quantidade">Quantidade</label>
-                    <input type="number">
-                    <div class="adicionar-remove">
-                        
-                        <button>Adicionar</button>
-                        <button>Remover</button>
-                    </div>
-                    
-                </div>
-            </div>
+            <aside id="pagamentos">
+                <table>
+                    <input type="checkbox" name="Pix" id="pix">
+                    <label for="checkbox">Pix</label>
+                    <input type="checkbox" name="cartoes" id="cartoes">
+                    <label for="cartoes">cartoes</label>
+                    <input type="checkbox" name="boletos" id="boletos">
+                    <label for="boletos">Boletos</label>
+                </table>
+            </aside>
+
         </section>
+
+        <section>
+            <aside id="titular">
+                <table>
+                    <div class="boto">
+                        <label for="checkbox">Nome do titular:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="boto">
+                        <label for="number">CPF do titular:</label>
+                        <input type="number" name="cpf" id="cpf">
+                    </div>
+                    <div class="boto">
+                        <label for="number">Numero do cartão:</label>
+                        <input type="number" name="Numero-do-cartao" id="numero-do-cartao">
+                    </div>
+                </table>
+            </aside>
+        </section>
+        <section>
+            <aside>
+                <table>
+                        <div class="boto">
+                            <label for="number">Calcular frete:</label>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div class="boto">
+                            <label for="number">Valor do frete:</label>
+                            <input type="number" name="" id="">
+                        </div>
+                    </table>
+                    <div class="finalizar-compra">
+                        <button class="boto-finalizar" type="button">Finalizar compra</button>
+                    </div>
+                </aside>
+            </section>
     </main>
     
     <footer>
-        <form action="">
-    
-                <h2>Duvidas?</h2>
-
-            
-                <label for="nome">Nome:</label>
-                <input class="campo-preenchimento" type="text" id="nome" name="nome">
-                <label for="telefone">Telefone:</label>
-                <input class="campo-preenchimento" type="tel" id="telefone" name="telefone">
-                <label for="Email">Email:</label>
-                <input class="campo-preenchimento" type="email" id="Email" name="Email">
-                <label for="mensagem">Mensagem:</label>
-                <input class="campo-preenchimento" type="msg"id=mesagem size="20" >
-                <input type="button" value="Enviar">
-                
-            </form>
-
-
-
     <div class="pagamentos">
         <h2>Formas de pagamentos</h2>
         <img id="cartoes" src="/img/imagens/payment-mobile_2021.png" alt="">

@@ -86,96 +86,67 @@ a {
     padding-top: 109px;
 }
 
-
-.sub-titulo {
-    padding: 100px;
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 200px;
-}
-
 main {
-    background-color: rgb(255, 255, 255);
+    section {
+        margin: 0 50px;
+        padding:  30px;
+        border: solid rgb(255, 255, 255) 1px;
+        width: 450px;
+        margin-left: auto;
+        background: rgb(253, 194, 85);
+    }
+    .produto-quantidade{
+        display: flex;
+        justify-content: space-around;
+    }
+    .subtitulo {
+        margin-bottom: 25px;
+    }
+    .titulo-carrinho {
+        background: gainsboro;
+        font-size: 40px;
+        margin-top: 123px;
+        padding: 50px 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #pagamentos{
+        
+        display: flex;
+        gap: 0.4rem;
+    }
+    #titular {
+        
+        display: flex;
+        flex-direction: column;
+        width: 295px;
+        gap: 0.5rem;
+    }
+    .boto {
+        display: flex;
+        gap: 0.4rem;
+    }
+    .finalizar-compra {
+        margin: 20px;
+        position: relative;
+        right: 20px;
+        
+    }
+    .boto-finalizar {
+        height: 2.5rem;
+        width: 10rem;
+        background: greenyellow;
+        border-color: chartreuse;
+    }
 }
-
-#carrinho {  
-    margin-top: -400px;
-    text-align: center;
-    font-size: 25px;
-}
-
-#produtos-carrinho {
-    position: relative;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding: 300px;
-    padding-top: 10px;
-    line-height: 50px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.opcoes-pagamen {
-    line-height: 30px;
-}
-
-.quantidade {
-    display: flex;
-    flex-direction: column;
-    width: 90px;
-    padding-top: -20px;
-}
-
-.adicionar-remove {
-    display: flex;
-    padding-top: 10px;
-    gap: 5px;
-}
-
-#formas-pagamento {
-    font-size: 15px;
-    line-height: 85px;
-    padding-left: 50px;
-    border: solid black 2px;
-    border-radius: 30px;
-    position: relative;
-    height: 500px;
-    width: 500px;
-    left: 1100px;
-    top: 400px;
-}
-
-.frete-total-finalizar {
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    line-height: 45px;
-    padding-left: 50px;
-    border: solid black 2px;
-    border-radius: 30px;
-    position: relative;
-    height: 150px;
-    width: 500px;
-    left: 1100px;
-    top: 420px;
-}
-
-#finalizar-compra-botao {
-    position: relative;
-    top: 10px;
-    width: 100px;
-    border-radius: 10px;
-}
-
 
 footer {
     display: flex;
     background-color: rgb(253, 194, 85);
     justify-content: space-around;
     flex-direction: row-reverse;
-    padding: 100px;
+    padding: 10px;
+    margin-top: 100px;
 }
 
 form {
