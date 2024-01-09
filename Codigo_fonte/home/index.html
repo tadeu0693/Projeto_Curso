@@ -2,9 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold Beer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="/Codigo_fonte/home/style.css">
+    <script src="script.js" defer></script>
+    <title>Tavelian beer</title>
 </head>
 </body>
         <header>
@@ -12,7 +13,7 @@
         <nav>
             <span><img id="logo" src="/img/logo.jpg" alt="logo"></span>
 
-            <h1 id="titulo">Bar Beer</h1>
+            <h1 id="titulo">Tavelian Beer</h1>
 
             <div id="login">
                 <h3>Login</h3>
@@ -154,12 +155,18 @@
 
             
                 <label for="nome">Nome:</label>
-                <input class="campo-preenchimento" type="text" id="nome" name="nome">
+                <input class="campo-preenchimento" type="text" id="name" name="name">
+                <p id="name-helper" class="helper-text"></p>
+
                 <label for="telefone">Telefone:</label>
                 <input class="campo-preenchimento" type="tel" id="telefone" name="telefone">
-                <label for="Email">Email:</label>
-                <input class="campo-preenchimento" type="email" id="Email" name="Email">
+                
+                <label for="email">Email:</label>
+                <input class="campo-preenchimento" type="email" id="email" name="email">
+                <p id="email-helper" class="helper-text"></p>
+                
                 <label for="mensagem">Mensagem:</label>
+                <p id="mensagem" class="helper-text"></p>
                 <input class="campo-preenchimento" type="msg"id=mesagem size="20" >
                 <input type="button" value="Enviar">
                 
