@@ -91,7 +91,7 @@ a {
 .quemsomos {
     text-align: center;
     margin-block-end: 50px;      
-    display: flex;
+    display: flexbox;
         
     
 }
