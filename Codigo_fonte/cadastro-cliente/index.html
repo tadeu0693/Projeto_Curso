@@ -65,79 +65,100 @@
                 <li><a href="/Codigo_fonte/carrinho/index.html">Meu Carrinho</a></li>
                 <li><a href="/Codigo_fonte/sobre-nos/index.html">Sobre Nós</a></li>
         </ul>
-       <div class="conteiner-form">
+        <div class="conteiner-form">
+            <form class="cadastro" onsubmit="return validarFormulario()">
+                <h2 class="cadastrar">Cadastre-se</h2>
+                <ol class="form">
+                   
+                        <label for="nome">Nome:</label>
+                        <input class="campo" type="text" id="nome" placeholder="Digite o Nome">
+                        <div id="erroNome" class="error-message"></div>
+                    
         
-        <form class="cadastro">
-            <h2 class="cadastrar">Cadastre-se</h2>
-            <ol class="form">
-                    <label for="name">Nome:</label>
-                    <input type="text">                                     
-                    <br>
-                    <label for="birth">Nascimento:</label>
-                    <input type="date">
-                    <br>
-                    <label for="tel">Telefone:</label>
-                    <input type="number">
-                    <br>
-                    <label for="docs">CPF:</label>
-                    <input type="number">
-                    <br>
-                    <label for="mail">E-mail:</label>
-                    <input type="text">
-                    <br>
-                    <label for="password">Senha:</label>
-                    <input type="text">
-                    <br>
-                    <label for="conf-password">Confimar senha:</label>
-                    <input type="text">
-                    <br>
-                    <input class="bot-concluir" type="button" value="Concluir cadastro">
+                    
+                        <label for="cpf">CPF:</label>
+                        <input class="campo" type="text" id="cpf" placeholder="Digite o CPF">
+                        <div id="erroCpf" class="error-message"></div>
+                    
+        
+                    
+                        <label for="nascimento">Nascimento:</label>
+                        <input class="campo" type="date" id="nascimento">
+                        <div id="erroNascimento" class="error-message"></div>
+                    
+        
+                    
+                        <label for="email">E-mail:</label>
+                        <input class="campo" type="email" id="email" placeholder="Digite o E-mail">
+                        <div id="erroEmail" class="error-message"></div>
+                    
+        
+                    
+                        <label for="senha">Senha:</label>
+                        <input class="campo" type="password" id="senha" placeholder="Digite a Senha">
+                        <div id="erroSenha" class="error-message"></div>
+                    
+        
+                    
+                        <label for="confirmaSenha">Confirmar Senha:</label>
+                        <input class="campo" type="password" id="confirmaSenha" placeholder="Confirme a Senha">
+                        <div id="erroConfirmaSenha" class="error-message"></div>
+                    
+                    <div id="sucesso" class="success-message"></div>
+                                    
+                        <input class="bot-concluir" type="submit" value="Enviar">
+                    
                 </ol>
-
-        </form>
+            </form>
     </div>
-<footer>
-    <form action="">
+    <footer>
+        <form action="">
     
-        <h2>Duvidas?</h2>
+                <h2>Duvidas?</h2>
 
+            
+                <label for="nome">Nome:</label>
+                <input class="campo-preenchimento" type="text" id="name" name="name">
+                <p id="name-helper" class="helper-text"></p>
+
+                <label for="telefone">Telefone:</label>
+                <input class="campo-preenchimento" type="tel" id="telefone" name="telefone">
+                
+                <label for="email">Email:</label>
+                <input class="campo-preenchimento" type="email" id="email" name="email">
+                <p id="email-helper" class="helper-text"></p>
+                
+                <label for="mensagem">Mensagem:</label>
+                <p id="mensagem" class="helper-text"></p>
+                <input class="campo-preenchimento" type="msg"id=mesagem size="20" >
+                <input type="button" value="Enviar">
+                
+            </form>
+
+
+
+    <div class="pagamentos">
+        <h2>Formas de pagamentos</h2>
+        <img id="cartoes" src="/img/imagens/payment-mobile_2021.png" alt="">
+    </div>
+
+    <div class="endereço">
+        <h2>Endereço</h2>
+        <a href="https://www.google.com.br/maps/preview" target="_blank" rel="external"> <img src="/img/imagens/mapa.png" alt="mapa loja"></a>
+    </div>
+
+
+    <div class="redes">
+
+        <h2>Siga nossa redes</h2>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/free-facebook-logo-png.png" alt="logo facebook" width="45"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="external"> <img src="/img/imagens/instagram.png" alt="logo instagram" width="45"></a>
+        <a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsap.png" alt="logo whatsap" width="45"></a>
     
-        <label for="nome">Nome:</label>
-        <input class="campo-preenchimento" type="text" id="nome" name="nome">
-        <label for="telefone">Telefone:</label>
-        <input class="campo-preenchimento" type="tel" id="telefone" name="telefone">
-        <label for="Email">Email:</label>
-        <input class="campo-preenchimento" type="email" id="Email" name="Email">
-        <label for="mensagem">Mensagem:</label>
-        <input class="campo-preenchimento" type="msg"id=mesagem size="20" >
-        <input class="bot-enviar" type="button" value="Enviar">
-        
-    </form>
+    </div>
 
 
-
-<div class="pagamentos">
-<h2>Formas de pagamentos</h2>
-<img id="cartoes" src="/img/imagens/payment-mobile_2021.png" alt="">
-</div>
-
-<div class="endereço">
-<h2>Endereço</h2>
-<a href="https://www.google.com.br/maps/preview" target="_blank" rel="external"> <img src="/img/imagens/mapa.png" alt="mapa loja"></a>
-</div>
-
-
-<div class="redes">
-
-<h2>Siga nossa redes</h2>
-<a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/free-facebook-logo-png.png" alt="logo facebook" width="45"></a>
-<a href="https://www.instagram.com/" target="_blank" rel="external"> <img src="/img/imagens/instagram.png" alt="logo instagram" width="45"></a>
-<a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsap.png" alt="logo whatsap" width="45"></a>
-
-</div>
-
-
-</footer>
+    </footer>
 </body>
 </html>
 </body>
