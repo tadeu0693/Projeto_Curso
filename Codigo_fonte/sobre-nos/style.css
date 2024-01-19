@@ -74,6 +74,13 @@ nav {
     padding: 7px;
 }
 
+.banner-promocoes {
+    inline-size: 100%;
+    block-size: 600px;
+    padding-block-start: 109px;
+}
+
+
 a {
     color: aliceblue;
     text-decoration: none;
@@ -89,13 +96,13 @@ a {
 }
 
 .quemsomos {
+    display: flex;
     text-align: center;
-    margin-block-end: 50px;      
-    display: flexbox;
-        
-    
+    margin-block-end: 100px;
+    text-align:center;
+    align-items: center;
+    margin-inline: 100px;
 }
-
 
 main {
     background-color: rgb(255, 255, 255);
@@ -127,5 +134,5 @@ form {
 .endereço {
      display: flex;
     flex-direction: column;
-   gap: 2rem;
+    gap: 2rem;
 }
