@@ -9,6 +9,7 @@ header {
     inset-block-start: 0;
     position: fixed;
     inline-size: 100%;
+    z-index: 5;
 }
 
 nav {
@@ -30,12 +31,6 @@ nav {
 #logo {
     display: flex;
     inline-size: 90px;
-}
-
-.botao-compra {
-    border-radius: 10px;
-    inline-size: 9rem;
-    border: solid rgb(253, 194, 85) 3px;
 }
 
 #login {
@@ -60,6 +55,7 @@ button {
     block-size: 20px;
     inline-size: 120px;
 }
+
 .login{
     inline-size: 50px;
 }
@@ -97,37 +93,62 @@ a {
 
 
 .sub-titulo {
-    padding: 100px;
+    z-index: 0;
+    position: relative;
+    top: 90px;
     text-align: center;
     font-size: 40px;
     padding-block-end: 200px;
 }
 
-
-.produtos-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-weight: bold;
-}
-
-.produtos-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-block-start: -80px;
-    font-weight: bold;
-}
-
-.nome-preço {
-    text-align: center;
-    margin-block-end: 250px;
-    padding: 10px;
-    line-height: 35px;
-}
-
 main {
     background-color: rgb(255, 255, 255);
+    margin-bottom: 300px;
+    section {
+        display: flex;
+        justify-content: center;
+        background: rgb(253, 194, 85);
+        border-radius: 10px;
+        width: 1350px;
+        padding: 30px;
+        margin: 0 auto;
+        gap: 2rem;
+        text-align: center;
+    }
+    article {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px black;
+    }
+    article:hover {
+        transform: scale(1.05);
+        transition: .6s;
+    }
+    .descricao-produto {
+        line-height: 1.8rem;
+    }
+    .preco {
+        color: #ff0000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .comprar {
+        background: greenyellow;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        height: 45px;
+        width: 180px;
+        border: white;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .comprar:active{
+        background-color: #ffffff;
+        color: greenyellow;
+    }
 }
 
 footer {
