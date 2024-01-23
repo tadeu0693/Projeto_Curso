@@ -24,13 +24,16 @@ nav {
     border-radius: 6px;
 }
 
+
 #titulo {
     font-size: 50px;
+    font-family: BRUSH SCRIPT MT;
 }
 
 #logo {
     display: flex;
     inline-size: 90px;
+    border-radius: 50px;
 }
 
 #login {

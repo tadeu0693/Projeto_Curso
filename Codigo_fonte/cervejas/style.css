@@ -6,9 +6,10 @@
 }
 
 header {
-    top: 0;
+    inset-block-start: 0;
     position: fixed;
-    width: 100%;
+    inline-size: 100%;
+    z-index: 5;
 }
 
 nav {
@@ -23,35 +24,43 @@ nav {
     border-radius: 6px;
 }
 
+
 #titulo {
     font-size: 50px;
+    font-family: BRUSH SCRIPT MT;
 }
 
 #logo {
     display: flex;
-    width: 90px;
-}
-
-.botao-compra {
-    border-radius: 10px;
-    width: 9rem;
-    border: solid rgb(253, 194, 85) 3px;
+    inline-size: 90px;
+    border-radius: 50px;
 }
 
 #login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    width: 150px;
+    gap: 3px;
 }
 
 .campo-preenchimento {
     border-radius: 10px;
+    inline-size: 200px;
 }
 
-.botao-login {
-    border-radius: 5px;
+button {
+    display:flex;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 10px;
+    block-size: 20px;
+    inline-size: 120px;
+}
+
+.login{
+    inline-size: 50px;
 }
 
 #menu-pesquisa {
@@ -80,44 +89,148 @@ a {
 }
 
 .banner-promocoes {
-    width: 100%;
-    height: 600px;
-    padding-top: 109px;
+    inline-size: 100%;
+    block-size: 600px;
+    padding-block-start: 109px;
 }
 
 
 .sub-titulo {
-    padding: 100px;
+    z-index: 0;
+    position: relative;
+    top: 90px;
     text-align: center;
     font-size: 40px;
-    padding-bottom: 200px;
-}
-
-
-.produtos-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-weight: bold;
-}
-
-.produtos-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: -80px;
-    font-weight: bold;
-}
-
-.nome-preço {
-    text-align: center;
-    margin-bottom: 250px;
-    padding: 10px;
-    line-height: 35px;
+    padding-block-end: 200px;
 }
 
 main {
     background-color: rgb(255, 255, 255);
+    margin-bottom: 300px;
+    section {
+        display: flex;
+        justify-content: center;
+        background: rgb(253, 194, 85);
+        border-radius: 10px;
+        width: 1350px;
+        padding: 30px;
+        margin: 0 auto;
+        gap: 2rem;
+        text-align: center;
+    }
+    article {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px black;
+    }
+    article:hover {
+        transform: scale(1.05);
+        transition: .6s;
+    }
+    .descricao-produto {
+        line-height: 1.8rem;
+    }
+    .preco {
+        color: #ff0000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .comprar {
+        background: greenyellow;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        height: 45px;
+        width: 180px;
+        border: white;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .comprar:active{
+        background-color: #ffffff;
+        color: greenyellow;
+    }
+    .slider {
+        margin: 0 auto;
+        width: 1920px;
+        height: 600px;
+        overflow: hidden;
+    }
+    .slides {
+        width: 400%;
+        height: 600px;
+        display: flex;
+    }
+    .slides input {
+        display: none;
+    }
+    .slide {
+        width: 25%;
+        position: relative;
+        transition: 2s;
+    }
+    .slide img {
+        width: 1920px;
+    }
+    .manual-navigation {
+        position: absolute;
+        width: 1920px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+    .manual-btn:hover {
+        background-color: white;
+    }
+    #radio1:checked ~.first {
+        margin-left: 0;
+    }
+    #radio2:checked ~.first {
+        margin-left: -25%;
+    }
+    #radio3:checked ~.first {
+        margin-left: -50%;
+    }
+    .navigation-auto div{
+        border: 2px solid blue;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .navigation-auto {
+        position: absolute;
+        width: 1920px;
+        margin-top: 560px;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+
+    }
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: white;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: white;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: white;
+    }
 }
 
 footer {
@@ -131,7 +244,7 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    width: 150px;
+    inline-size: 150px;
     gap: 3px;
     align-items: center;
 }
@@ -147,3 +260,33 @@ form {
     flex-direction: column;
    gap: 2rem;
 }
+
+
+required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    inline-size: auto;
+    display: block;
+    background-color: #202020;
+  }
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }
