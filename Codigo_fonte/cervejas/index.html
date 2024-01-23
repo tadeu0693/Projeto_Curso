@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tavelian Beer</title>
     <link rel="stylesheet" href="/Codigo_fonte/cervejas/style.css">
+    <script async src="script.js"></script>
 </head>
 <body>
             <header>
@@ -51,105 +52,138 @@
 
     </header>
 
-    <main>       
-        <img class="banner-promocoes" src="/img/imagem_carrocel.jpg" alt="banner promocional">
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img class="banner-promocoes" src="/img/banner tdeu psd 1920x400.jpg" alt="banner promocional">
+                </div>
+                <div class="slide">
+                    <img class="banner-promocoes" src="/img/BANNER 2.jpg" alt="banner promocional2">
+                </div>
+                <div class="slide">
+                    <img class="banner-promocoes" src="/img/banner 3.jpg" alt="banner promocional3">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>    
 
         <div class="sub-titulo-background">
-            <h2 class="sub-titulo">CERVEJAS</h2>
+            <h2 class="sub-titulo">Cervejas</h2>
         </div>
         
-        <section class="produtos-gerais">
-            
-            
-            <section class="produtos-1">
-                
-                <div>
-                        <img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
-                        <div class="nome-preço">
-
-                            <p>Cerveja heineken 600 ML</p>
-                            <a href="/Codigo_fonte/carrinho/index.html" ><input class="botao-compra" type="button" value="Comprar por R$8,00"></a>
-
-                        </div>
-                </div>
-                <div>
-                    <img src="/img/imagens/Serra_malte.jpg"  alt=" Cerveja Serra Malte" width="220" height="220">
-                    <div class="nome-preço">
-
-                        <p>Cerveja Serra Malte</p>
-                        <a href="/Codigo_fonte/carrinho/index.html" ><input class="botao-compra" type="button" value="comprar por R$4,50"></a>
-
+        <section>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/budweiser-330-6pack.png" alt="budweiser-330-6pack">
+                    <div class="descricao-produto">
+                        <h3>Budweiser Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
                     </div>
+                    <button class="comprar" type="button">Compara</button>
                 </div>
-                <div>
-                    <img src="/img/imagens/skol269.jpg" alt="Cerveja skol 269ml" width="220" height="220">
-                    <div class="nome-preço">
-
-                        <p>Cerveja Skol 269 ML</p>
-                        <a href="/Codigo_fonte/carrinho/index.html"><input class="botao-compra" type="button" value="comprar por R$3,50"></a>
-
+            </article>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/heineken6.jpg" alt="heineken6">
+                    <div class="descricao-produto">
+                        <h3>Heineken Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
                     </div>
+                    <button class="comprar" type="button">Compara</button>
                 </div>
-                <div>
-                    <img src="/img/imagens/original269ML.jpg" alt="Cerveja Original 269ML" width="220" height="220">
-                    <div class="nome-preço">
-
-                        <p>Cerveja Original 269 ML</p>
-                        <a href="/Codigo_fonte/carrinho/index.html"><input class="botao-compra" type="button" value="Comprar por 4,50"></a>
-
+            </article>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/sixpack-stella-j6.jpg" alt="sixpack-stella-j6">
+                    <div class="descricao-produto">
+                        <h3>Stella airtois Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
                     </div>
-                    
-            </div>
-            
-            </section>
-             <section class="produtos-2">
-                
-                <div>
-                        <img src="/img/heineken600.jpg"  alt=" Cerveja heineken 600" width="220" height="220">
-                        <div class="nome-preço">
-
-                            <p>Cerveja heineken 600 ML</p>
-                            <a href="/Codigo_fonte/carrinho/index.html" ><input class="botao-compra" type="button" value="Comprar por R$8,00"></a>
-
-                        </div>
+                    <button class="comprar" type="button">Compara</button>
                 </div>
-                <div>
-                    <img src="/img/imagens/Serra_malte.jpg"  alt=" Cerveja Serra Malte" width="220" height="220">
-                    <div class="nome-preço">
-
-                        <p>Cerveja Serra Malte</p>
-                        <a href="/Codigo_fonte/carrinho/index.html" ><input class="botao-compra" type="button" value="comprar por R$4,50"></a>
-
+            </article>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/corona330ml.jpg" alt="corona330ml">
+                    <div class="descricao-produto" >
+                        <h3>Corona Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
                     </div>
+                    <button class="comprar" type="button">Compara</button>
                 </div>
-                <div>
-                    <img src="/img/imagens/skol269.jpg" alt="Cerveja skol 269ml" width="220" height="220">
-                    <div class="nome-preço">
-
-                        <p>Cerveja Skol 269 ML</p>
-                        <a href="/Codigo_fonte/carrinho/index.html"><input class="botao-compra" type="button" value="comprar por R$3,50"></a>
-
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/budweiser-330-6pack.png" alt="budweiser-330-6pack">
+                    <div class="descricao-produto">
+                        <h3>Budweiser Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
                     </div>
+                    <button class="comprar" type="button">Compara</button>
                 </div>
-                <div>
-                    <img src="/img/imagens/original269ML.jpg" alt="Cerveja Original 269ML" width="220" height="220">
-                    <div class="nome-preço">
-
-                        <p>Cerveja Original 269 ML</p>
-                        <a href="/Codigo_fonte/carrinho/index.html"><input class="botao-compra" type="button" value="Comprar por 4,50"></a>
-
+            </article>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/heineken6.jpg" alt="heineken6">
+                    <div class="descricao-produto">
+                        <h3>Heineken Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
                     </div>
-                    
-            </div>
-            
-            </section>
-
+                    <button class="comprar" type="button">Compara</button>
+                </div>
+            </article>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/sixpack-stella-j6.jpg" alt="sixpack-stella-j6">
+                    <div class="descricao-produto">
+                        <h3>Stella airtois Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
+                    </div>
+                    <button class="comprar" type="button">Compara</button>
+                </div>
+            </article>
+            <article>
+                <div class="produtos">
+                    <img src="/img/imagens/corona330ml.jpg" alt="corona330ml">
+                    <div class="descricao-produto" >
+                        <h3>Corona Long Neck 330ml</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <span class="preco">R$ 45,00</span>
+                    </div>
+                    <button class="comprar" type="button">Compara</button>
+                </div>
+            </article>
         </section>
     </main>
     
     <footer>
         <form action="">
-    
                 <h2>Duvidas?</h2>
 
             
@@ -181,9 +215,9 @@
     <div class="redes">
 
         <h2>Siga nossa redes</h2>
-        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/free-facebook-logo-png.png" alt="logo facebook" width="75"></a>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"> <img src="/img/imagens/facebook.png" alt="logo facebook" width="75"></a>
         <a href="https://www.instagram.com/" target="_blank" rel="external"> <img src="/img/imagens/instagram.png" alt="logo instagram" width="43"></a>
-        <a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsap.png" alt="logo whatsap" width="45"></a>
+        <a href="https://api.whatsapp.com/send?phone=11989534854" target="_blank" rel="external"> <img src="/img/imagens/whatsapp.png" alt="logo whatsap" width="45"></a>
     
     </div>
 

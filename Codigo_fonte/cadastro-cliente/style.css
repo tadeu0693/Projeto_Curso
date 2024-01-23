@@ -82,7 +82,7 @@ footer {
 margin-left: auto;
 text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
-}
+
 
 .pagamentos {
     display: flex;
@@ -96,7 +96,6 @@ text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
    gap: 2rem;
 }
 
-/*novo codigo*/
 
 * {
     margin: 0;
@@ -123,13 +122,16 @@ nav {
     border-radius: 6px;
 }
 
+
 #titulo {
     font-size: 50px;
+    font-family: BRUSH SCRIPT MT;
 }
 
 #logo {
     display: flex;
     inline-size: 90px;
+    border-radius: 50px;
 }
 
 .botao-compra {

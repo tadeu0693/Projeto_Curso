@@ -5,6 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 header {
     inset-block-start: 0;
     position: fixed;
@@ -25,11 +27,13 @@ nav {
 
 #titulo {
     font-size: 50px;
+    font-family: BRUSH SCRIPT MT;
 }
 
 #logo {
     display: flex;
     inline-size: 90px;
+    border-radius: 50px;
 }
 
 .botao-compra {
