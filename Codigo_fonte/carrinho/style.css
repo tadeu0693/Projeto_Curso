@@ -89,12 +89,34 @@ a {
 
 main {
     #carrinho {
-        background-color: rgb(226, 226, 226);
+        background-color: rgb(255, 255, 255);
         height: 300px;
+        width: 750px;
         position: relative;
-        top: 200px;
-        padding: 20px;
-        line-height: 35px;
+        top: 120px;
+        padding: 40px;
+        line-height: 80px;
+        border: solid 2px gainsboro;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    .titulo-carrinho {
+        background-color: rgb(206, 206, 206);
+        position: relative;
+        top: 118px;
+        text-align: center;
+        padding: 35px;
+    }
+    .container-preco {
+        border: solid 2px gainsboro;
+        border-radius: 10px;
+        height: 50px;
+        position: relative;
+        top: 30px;
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        
     }
 }
 
@@ -104,11 +126,10 @@ footer {
     justify-content: space-around;
     flex-direction: row-reverse;
     padding: 10px;
-    margin-top: 100px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 10px; 
+    padding: 10px;
 }
 
 form {
