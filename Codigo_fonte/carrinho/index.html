@@ -53,65 +53,14 @@
     </header>
     
     <main>
-        <div class="titulo-carrinho">Meu Carrinho</div>
-        <div id="produto">
-            <h3>Produto</h3>
-            <img src="/img/heineken600.jpg" alt="">
-            <p class="descricao">Cerveja</p>
-            <div class="preco">R$ 10,00</div>
-        </div>
-        <section>
-            <div class="subtitulo">
-                <h4>Forma de Pagamentos</h4>
-            </div>
-            <aside id="pagamentos">
-                <table>
-                    <input type="checkbox" name="Pix" id="pix">
-                    <label for="checkbox">Pix</label>
-                    <input type="checkbox" name="cartoes" id="cartoes">
-                    <label for="cartoes">cartoes</label>
-                    <input type="checkbox" name="boletos" id="boletos">
-                    <label for="boletos">Boletos</label>
-                </table>
-            </aside>
-
-        </section>
-
-        <section>
-            <aside id="titular">
-                <table>
-                    <div class="boto">
-                        <label for="checkbox">Nome do titular:</label>
-                        <input type="text" name="nome" id="nome">
-                    </div>
-                    <div class="boto">
-                        <label for="number">CPF do titular:</label>
-                        <input type="number" name="cpf" id="cpf">
-                    </div>
-                    <div class="boto">
-                        <label for="number">Numero do cartão:</label>
-                        <input type="number" name="Numero-do-cartao" id="numero-do-cartao">
-                    </div>
-                </table>
-            </aside>
-        </section>
-        <section>
-            <aside>
-                <table>
-                        <div class="boto">
-                            <label for="number">Calcular frete:</label>
-                            <input type="number" name="" id="">
-                        </div>
-                        <div class="boto">
-                            <label for="number">Valor do frete:</label>
-                            <input type="number" name="" id="">
-                        </div>
-                    </table>
-                    <div class="finalizar-compra">
-                        <button class="boto-finalizar" type="button">Finalizar compra</button>
-                    </div>
-                </aside>
-            </section>
+        <div id="carrinho">
+            <h2>Meu Carrinho</h2>
+            <ul id="listaCarrinho">
+              
+            </ul>
+            <p>Total: R$<span id="totalCarrinho">0.00</span></p>
+          </div>
+          <a href="/home/index.html">Continuar comprando</a>
     </main>
     
     <footer>

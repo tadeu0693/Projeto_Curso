@@ -83,3 +83,31 @@ function nextImage(){
     }
     document.getElementById("radio"+count).checked = true;
 }
+
+// carrinho
+
+document.addEventListener("DOMContentLoaded", function() {
+    let botoesComprar = document.querySelectorAll(".comprar");
+    botoesComprar.forEach(function(botao) {
+        botao.addEventListener("click", function() {
+            adicionarAoCarrinho(this);
+        });
+    });
+  
+    function adicionarAoCarrinho(botao) {
+        let produto = botao.parentElement;
+        let nomeProduto = produto.querySelector("h3").textContent;
+        let precoProduto = parseFloat(produto.querySelector(".preco").textContent.replace('R$', '').trim());
+        let imagemProduto = produto.querySelector("img").src;
+  
+        // Armazenar os dados no localStorage
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        carrinho.push({
+            nome: nomeProduto,
+            preco: precoProduto,
+            imagem: imagemProduto
+        });
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    }
+  });
+  

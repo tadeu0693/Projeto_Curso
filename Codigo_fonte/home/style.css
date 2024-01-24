@@ -107,7 +107,7 @@ a {
 main {
     background-color: rgb(255, 255, 255);
     margin-bottom: 300px;
-    section {
+    #produtosSection {
         display: flex;
         justify-content: center;
         background: rgb(253, 194, 85);
