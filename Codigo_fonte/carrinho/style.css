@@ -88,56 +88,13 @@ a {
 }
 
 main {
-    section {
-        margin: 0 50px;
-        padding:  30px;
-        border: solid rgb(255, 255, 255) 1px;
-        width: 450px;
-        margin-left: auto;
-        background: rgb(253, 194, 85);
-    }
-    .produto-quantidade{
-        display: flex;
-        justify-content: space-around;
-    }
-    .subtitulo {
-        margin-bottom: 25px;
-    }
-    .titulo-carrinho {
-        background: gainsboro;
-        font-size: 40px;
-        margin-top: 123px;
-        padding: 50px 0;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    #pagamentos{
-        
-        display: flex;
-        gap: 0.4rem;
-    }
-    #titular {
-        
-        display: flex;
-        flex-direction: column;
-        width: 295px;
-        gap: 0.5rem;
-    }
-    .boto {
-        display: flex;
-        gap: 0.4rem;
-    }
-    .finalizar-compra {
-        margin: 20px;
+    #carrinho {
+        background-color: rgb(226, 226, 226);
+        height: 300px;
         position: relative;
-        right: 20px;
-        
-    }
-    .boto-finalizar {
-        height: 2.5rem;
-        width: 10rem;
-        background: greenyellow;
-        border-color: chartreuse;
+        top: 200px;
+        padding: 20px;
+        line-height: 35px;
     }
 }
 
@@ -148,6 +105,10 @@ footer {
     flex-direction: row-reverse;
     padding: 10px;
     margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px; 
 }
 
 form {
