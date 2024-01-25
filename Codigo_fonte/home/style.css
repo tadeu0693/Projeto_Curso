@@ -290,3 +290,7 @@ required-popup::after {
   .visible {
     display: block;
   }
+
+  .redes{
+    margin-bottom: 2rem;
+  }
