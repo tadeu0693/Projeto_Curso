@@ -1,16 +1,18 @@
 /* CSS da Página */
 
 .conteiner-form {
+    margin-top: -30px;
     text-align: center;
-    background-color: rgb(253, 194, 85) ;
-    max-width: 480px;
-    box-shadow: 5px 5px 10px #888888;
-    border-radius: 15px;
-    margin-top: 3rem;
+    background-color: rgb(253, 194, 85);
+    width: 366px;    
+    height: 510px;
+    box-shadow: 5px 5px 10px #650303;
+    border-radius: 30px;    
     margin-bottom: 3rem;
     max-height: 850px;
     margin-left: auto;
     margin-right: auto;
+    float: right;
 }
 
 .cadastro {
@@ -37,12 +39,13 @@
     text-shadow: 1px 1px 0px #888888;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    
 }
 .bot-concluir{
     margin-left: 80px;
     margin-bottom: 2rem;
 
-    /*css da pagina*/
+   
 }
 .sub-titulo {
     padding: 100px;
@@ -55,32 +58,13 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
-#formas-pagamento {
-    font-size: 15px;
-    line-height: 85px;
-    padding-left: 50px;
-    border: solid black 2px;
-    border-radius: 30px;
-    position: relative;
-    height: 500px;
-    width: 500px;
-    left: 1100px;
-    top: 400px;
-}
 
-footer {
-    display: flex;
-    background-color: rgb(253, 194, 85);
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    padding: 80px;
-}
- 
 
 
 .cadastrar{
 margin-left: auto;
 text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
 }
 
 
@@ -104,10 +88,25 @@ text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#imgcad {    
+    margin-right: 10%;
+    width: 1300px;
+    padding-top: 125px;
+    block-size: 635px;
+    border-radius: 40px;    
+    position: absolute;
+    left: 0;
+    top: 0;   
+    
+}
+
+
 header {
     inset-block-start: 0;
     position: fixed;
     inline-size: 100%;
+    z-index: 5;
+
 }
 
 nav {
@@ -150,6 +149,7 @@ nav {
 .campo-preenchimento {
     border-radius: 10px;
     inline-size: 200px;
+    
 }
 
 button {
@@ -234,10 +234,13 @@ main {
 
 footer {
     display: flex;
+    float: inline-end;
     background-color: rgb(253, 194, 85);
     justify-content: space-around;
     flex-direction: row-reverse;
-    padding: 100px;
+    padding: 80px;
+    height: 350px;
+    width:1750px;
 }
 
 form {

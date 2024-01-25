@@ -111,11 +111,11 @@ main {
         display: flex;
         justify-content: center;
         background: rgb(253, 194, 85);
-        border-radius: 10px;
-        width: 1350px;
-        padding: 30px;
+        border-radius: 20px;
+        width: 1600px;
+        padding: 50px;
         margin: 0 auto;
-        gap: 2rem;
+        gap: 4rem;
         text-align: center;
     }
     article {
