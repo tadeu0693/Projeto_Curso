@@ -240,7 +240,7 @@ footer {
     flex-direction: row-reverse;
     padding: 80px;
     height: 350px;
-    width:1750px;
+    width:100%;
 }
 
 form {
