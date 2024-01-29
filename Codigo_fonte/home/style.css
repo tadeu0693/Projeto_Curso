@@ -18,6 +18,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     gap: 30rem;
+    height:100px;
 }
 
 .botao-pesquisa {
@@ -26,6 +27,8 @@ nav {
 
 
 #titulo {
+    position: relative;
+    left: 65px;
     font-size: 50px;
     font-family: BRUSH SCRIPT MT;
 }
@@ -105,8 +108,9 @@ a {
 }
 
 main {
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 300px;
+    background-color: rgb(253, 228, 182);
+    width: 1920px;
+    padding-bottom: 200px;
     #produtosSection {
         display: flex;
         justify-content: center;
@@ -137,7 +141,7 @@ main {
         font-weight: bold;
     }
     .comprar {
-        background: greenyellow;
+        background: rgb(137, 228, 0);
         cursor: pointer;
         transition: background-color 0.3s ease;
         height: 45px;
@@ -149,8 +153,8 @@ main {
         margin: 10px;
     }
     .comprar:active{
-        background-color: #ffffff;
-        color: greenyellow;
+        background-color: rgb(0, 0, 0);
+        color: rgb(137, 228, 0);
     }
     .slider {
         margin: 0 auto;
@@ -238,7 +242,8 @@ footer {
     background-color: rgb(253, 194, 85);
     justify-content: space-around;
     flex-direction: row-reverse;
-    padding: 100px;
+    padding: 50px;
+    width: 1920px;
 }
 
 form {
