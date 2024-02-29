@@ -149,8 +149,9 @@ main {
         border: white;
         color: white;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         margin: 10px;
+        line-height: 18px;
     }
     .comprar:active{
         background-color: rgb(0, 0, 0);
