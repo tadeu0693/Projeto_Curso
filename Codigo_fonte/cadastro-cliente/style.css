@@ -115,6 +115,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     gap: 30rem;
+    height: 100px;
 }
 
 .botao-pesquisa {
@@ -123,6 +124,8 @@ nav {
 
 
 #titulo {
+    position: relative;
+    left: 65px;
     font-size: 50px;
     font-family: BRUSH SCRIPT MT;
 }
