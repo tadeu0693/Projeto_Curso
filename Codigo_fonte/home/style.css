@@ -109,7 +109,6 @@ a {
 
 main {
     background-color: rgb(253, 228, 182);
-    width: 1920px;
     padding-bottom: 200px;
     #produtosSection {
         display: flex;
@@ -159,7 +158,7 @@ main {
     }
     .slider {
         margin: 0 auto;
-        width: 1920px;
+        width: 1835px;
         height: 600px;
         overflow: hidden;
     }
@@ -181,7 +180,7 @@ main {
     }
     .manual-navigation {
         position: absolute;
-        width: 1920px;
+        width: 1835px;
         margin-top: -40px;
         display: flex;
         justify-content: center;
@@ -218,7 +217,7 @@ main {
     }
     .navigation-auto {
         position: absolute;
-        width: 1920px;
+        width: 1835px;
         margin-top: 560px;
         display: flex;
         justify-content: center;
@@ -244,7 +243,7 @@ footer {
     justify-content: space-around;
     flex-direction: row-reverse;
     padding: 50px;
-    width: 1920px;
+    width: 100%;
 }
 
 form {
