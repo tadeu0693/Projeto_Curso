@@ -108,8 +108,8 @@ a {
 }
 
 main {
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 300px;
+    background-color: rgb(253, 228, 182);
+    padding-bottom: 200px;
     section {
         display: flex;
         justify-content: center;
