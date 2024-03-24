@@ -143,13 +143,12 @@ main {
         background: rgb(137, 228, 0);
         cursor: pointer;
         transition: background-color 0.3s ease;
-        height: 45px;
-        width: 180px;
+        height: 50px;
+        width: 270px;
         border: white;
         color: white;
         font-weight: bold;
         font-size: 18px;
-        margin: 10px;
         line-height: 18px;
     }
     .comprar:active{
