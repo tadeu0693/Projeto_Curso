@@ -140,16 +140,15 @@ main {
         font-weight: bold;
     }
     .comprar {
-        background: greenyellow;
+        background: rgb(137, 228, 0);
         cursor: pointer;
         transition: background-color 0.3s ease;
-        height: 45px;
-        width: 180px;
+        height: 50px;
+        width: 270px;
         border: white;
         color: white;
         font-weight: bold;
         font-size: 20px;
-        margin: 10px;
     }
     .comprar:active{
         background-color: #ffffff;
