@@ -1,94 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    inset-block-start: 0;
-    position: fixed;
-    inline-size: 100%;
-    z-index: 5;
-}
-
-nav {
-    display: flex;
-    background-color: rgb(253, 194, 85);
-    align-items: center;
-    justify-content: space-around;
-    gap: 30rem;
-    height:100px;
-}
-
-.botao-pesquisa {
-    border-radius: 6px;
-}
-
-
-#titulo {
-    position: relative;
-    left: 65px;
-    font-size: 50px;
-    font-family: BRUSH SCRIPT MT;
+nav.navbar{
+    background-color:rgb(253, 194, 85);
 }
 
 #logo {
-    display: flex;
-    inline-size: 90px;
-    border-radius: 50px;
-}
-
-#login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-}
-
-.campo-preenchimento {
     border-radius: 10px;
-    inline-size: 200px;
-}
-
-button {
-    display:flex;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    border-radius: 10px;
-    block-size: 20px;
-    inline-size: 120px;
-}
-
-.login{
-    inline-size: 50px;
-}
-
-#menu-pesquisa {
-    display: flex;
-    background-color: black;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 4.1rem;
-}
-
-.categorias {
-    display: flex;
-    gap: 5rem;
-    list-style: none;
-}
-
-.barra-pesquisa {
-    display: flex;
-    gap: 5px;
-    padding: 7px;
-}
-
-a {
-    color: aliceblue;
-    text-decoration: none;
 }
 
 .banner-promocoes {
@@ -247,7 +167,7 @@ footer {
 
 form {
     display: flex;
-    flex-direction: column;
+    
     inline-size: 150px;
     gap: 3px;
     align-items: center;
