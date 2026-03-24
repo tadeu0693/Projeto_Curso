@@ -859,3 +859,214 @@ footer h2 {
 .texto-vermelho { color: var(--vermelho); }
 .texto-verde { color: var(--verde); }
 .negrito { font-weight: 700; }
+
+/* ================================================
+   RESPONSIVIDADE — Menu Hamburguer & Mobile
+   ================================================ */
+
+/* --- Botão hamburguer (visível só no mobile) --- */
+.btn-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 200;
+}
+
+.btn-hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--preto);
+  border-radius: 2px;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  transform-origin: center;
+}
+
+/* Animação X ao abrir */
+.btn-hamburger.aberto span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.btn-hamburger.aberto span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.btn-hamburger.aberto span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* --- Overlay escuro --- */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 90;
+}
+.menu-overlay.visivel { display: block; }
+
+/* ============================================
+   BREAKPOINT: tablets e celulares (≤ 900px)
+   ============================================ */
+@media (max-width: 900px) {
+
+  :root { --header-height: 90px; }
+
+  /* Topo do header */
+  .nav-topo {
+    padding: 0 1.2rem;
+    gap: 0;
+    justify-content: space-between;
+    height: 90px;
+  }
+
+  .nav-marca h1 { font-size: 1.5rem; }
+  .nav-marca img { width: 52px; height: 52px; }
+
+  /* Esconde o bloco de login no topo */
+  .nav-login { display: none; }
+
+  /* Mostra o hamburguer */
+  .btn-hamburger { display: flex; }
+
+  /* Menu lateral deslizante */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(300px, 82vw);
+    height: 100vh;
+    background: var(--preto);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6rem 1.5rem 2rem;
+    gap: 0;
+    box-shadow: -4px 0 28px rgba(0,0,0,0.3);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  .nav-menu.aberto { right: 0; }
+
+  /* Links empilhados */
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 4px;
+    font-size: 1rem;
+    color: var(--branco);
+    border-bottom: none;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.ativo {
+    color: var(--amarelo);
+    border-bottom: none;
+    padding-left: 8px;
+  }
+
+  /* Barra de pesquisa em coluna */
+  .barra-pesquisa {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    position: relative;
+  }
+
+  .barra-pesquisa input {
+    width: 100% !important;
+    background: #333;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .btn-buscar {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  /* Carrossel */
+  .carrossel-slide img { height: 220px; }
+
+  /* Seção título */
+  .secao-titulo { padding: 2rem 1rem 1rem; }
+  .secao-titulo h2 { font-size: 1.6rem; }
+
+  /* Grade de produtos: 2 colunas */
+  .grade-produtos {
+    gap: 1rem;
+    padding: 1rem 1rem 3rem;
+  }
+
+  .card-produto {
+    width: calc(50% - 0.5rem);
+    min-width: 140px;
+    padding: 1rem 0.8rem;
+  }
+
+  .card-produto img { width: 120px; height: 120px; }
+  .card-produto h3 { font-size: 0.88rem; }
+  .btn-comprar { font-size: 0.78rem; padding: 7px 10px; }
+
+  /* Promoções */
+  .secao-promocoes { gap: 1rem; padding: 1.5rem 1rem 3rem; }
+  .card-promo { width: calc(50% - 0.5rem); min-width: 140px; }
+
+  /* Carrinho */
+  .pagina-carrinho { padding: 0 1rem; margin: 1.5rem auto; }
+  .pagina-carrinho h2 { font-size: 1.5rem; }
+
+  .item-carrinho { flex-wrap: wrap; gap: 0.6rem; padding: 0.7rem 0.9rem; }
+  .item-carrinho img { width: 55px; height: 55px; }
+
+  .resumo-pedido { max-width: 100%; margin-left: 0; }
+
+  /* Cadastro */
+  .pagina-cadastro { padding: 2rem 1rem; }
+  #form-cadastro { padding: 2rem 1.2rem; }
+
+  /* Sobre nós */
+  .equipe { padding: 2rem 1rem; gap: 1rem; }
+  .card-membro { width: 100%; max-width: 340px; }
+  .sobre-nos-titulo h2 { font-size: 1.8rem; }
+
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1.2rem 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* ============================================
+   BREAKPOINT: celulares pequenos (≤ 480px)
+   ============================================ */
+@media (max-width: 480px) {
+
+  .nav-marca h1 { font-size: 1.2rem; }
+  .nav-marca img { width: 44px; height: 44px; }
+
+  /* 1 coluna nos celulares menores */
+  .card-produto { width: 100%; max-width: 320px; }
+  .card-promo   { width: 100%; max-width: 320px; }
+
+  .carrossel-slide img { height: 160px; }
+
+  /* Footer coluna única */
+  footer { grid-template-columns: 1fr; }
+
+  .secao-titulo h2 { font-size: 1.4rem; }
+}
