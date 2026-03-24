@@ -61,7 +61,7 @@ Coloque os seguintes arquivos em `assets/img/`:
 
 O número está configurado em `assets/js/carrinho.js`:
 ```js
-const WHATSAPP_NUMERO = '5563992130188';
+const WHATSAPP_NUMERO = '5563992130188', numero usado apenas para teste;
 ```
 Para alterar, troque o número nessa linha (somente dígitos, com DDI 55).
 
