@@ -11,6 +11,9 @@
 </head>
 <body>
 
+  <!-- Overlay escuro ao abrir o menu mobile -->
+  <div class="menu-overlay" id="menu-overlay"></div>
+
   <!-- ===== HEADER (mesmo em todas as páginas) ===== -->
   <header>
     <!-- Barra superior: logo, título e login -->
@@ -20,13 +23,20 @@
         <h1>Tavelian Beer</h1>
       </div>
 
-      <!-- Área de login -->
+      <!-- Área de login (some no mobile) -->
       <div class="nav-login">
         <input type="text"     placeholder="Usuário" aria-label="Usuário">
         <input type="password" placeholder="Senha"   aria-label="Senha">
         <button class="btn btn-login">Entrar</button>
         <button class="btn btn-esqueci">Esqueci a senha</button>
       </div>
+
+      <!-- Botão hamburguer (visível só no mobile) -->
+      <button class="btn-hamburger" id="btn-hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
 
     <!-- Barra de navegação + pesquisa -->
@@ -294,5 +304,44 @@
     });
   </script>
 
+  <!-- Overlay e script do menu hamburguer -->
+  
+  <script>
+    (function() {
+      var btn     = document.getElementById('btn-hamburger');
+      var menu    = document.querySelector('.nav-menu');
+      var overlay = document.getElementById('menu-overlay');
+
+      function abrirMenu() {
+        menu.classList.add('aberto');
+        btn.classList.add('aberto');
+        overlay.classList.add('visivel');
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function fecharMenu() {
+        menu.classList.remove('aberto');
+        btn.classList.remove('aberto');
+        overlay.classList.remove('visivel');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      btn.addEventListener('click', function() {
+        menu.classList.contains('aberto') ? fecharMenu() : abrirMenu();
+      });
+
+      overlay.addEventListener('click', fecharMenu);
+
+      document.querySelectorAll('.nav-links a').forEach(function(link) {
+        link.addEventListener('click', fecharMenu);
+      });
+
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 900) fecharMenu();
+      });
+    })();
+  </script>
 </body>
 </html>
