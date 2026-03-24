@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavelian Beer — Meu Carrinho</title>
+  <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-topo">
+      <div class="nav-marca">
+        <img src="assets/img/logo.jpg" alt="Logo Tavelian Beer">
+        <h1>Tavelian Beer</h1>
+      </div>
+      <div class="nav-login">
+        <input type="text"     placeholder="Usuário" aria-label="Usuário">
+        <input type="password" placeholder="Senha"   aria-label="Senha">
+        <button class="btn btn-login">Entrar</button>
+        <button class="btn btn-esqueci">Esqueci a senha</button>
+      </div>
+    </div>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cervejas.html">Cervejas</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+        <li><a href="cadastro.html">Área do Cliente</a></li>
+        <li>
+          <a href="carrinho.html" class="ativo icone-carrinho">
+            🛒 Meu Carrinho
+            <span class="badge-carrinho" id="badge-carrinho"></span>
+          </a>
+        </li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+      </ul>
+      <div class="barra-pesquisa">
+        <input type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="espacador-header"></div>
+
+  <!-- ===== CONTEÚDO ===== -->
+  <main>
+    <div class="pagina-carrinho">
+      <h2>🛒 Meu Carrinho</h2>
+
+      <!-- Mensagem exibida quando o carrinho está vazio -->
+      <div class="carrinho-vazio" id="carrinho-vazio" style="display:none;">
+        <h3>Seu carrinho está vazio</h3>
+        <p>Adicione produtos para continuar</p>
+        <br>
+        <a href="cervejas.html">Ver cervejas</a>
+      </div>
+
+      <!-- Lista de itens do carrinho (preenchida pelo JS) -->
+      <ul id="lista-carrinho" aria-label="Itens no carrinho"></ul>
+
+      <!-- Resumo do pedido + botão de finalizar -->
+      <div class="resumo-pedido" id="resumo-pedido" style="display:none;">
+        <div class="total">
+          <span>Total:</span>
+          <span>R$ <span id="total-carrinho">0,00</span></span>
+        </div>
+
+        <p style="font-size:0.85rem; color: var(--cinza-medio);">
+          Ao finalizar, você será redirecionado para o WhatsApp da nossa adega para confirmar o pedido e o pagamento.
+        </p>
+
+        <!-- Botão que abre o WhatsApp com o resumo do pedido -->
+        <button class="btn-whatsapp" id="btn-finalizar">
+          <img src="assets/img/whatsapp.png" alt="WhatsApp" onerror="this.style.display='none'">
+          Finalizar Pedido via WhatsApp
+        </button>
+
+        <!-- Botão para continuar comprando -->
+        <a href="cervejas.html" style="text-align:center; font-size:0.85rem; color:var(--cinza-medio); margin-top:0.3rem;">
+          ← Continuar comprando
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div>
+      <h2>Dúvidas?</h2>
+      <form class="footer-form" id="footer-form" novalidate>
+        <label for="footer-nome">Nome:</label>
+        <input type="text"  id="footer-nome"  placeholder="Seu nome">
+        <span class="helper-text" id="footer-nome-helper"></span>
+        <label for="footer-tel">Telefone:</label>
+        <input type="tel"   id="footer-tel"   placeholder="(00) 00000-0000">
+        <label for="footer-email">E-mail:</label>
+        <input type="email" id="footer-email" placeholder="seu@email.com">
+        <span class="helper-text" id="footer-email-helper"></span>
+        <label for="footer-msg">Mensagem:</label>
+        <textarea id="footer-msg" rows="3" placeholder="Como podemos ajudar?"></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+    <div class="footer-pagamentos">
+      <h2>Formas de Pagamento</h2>
+      <img src="assets/img/payment-mobile_2021.png" alt="Bandeiras aceitas">
+    </div>
+    <div class="footer-endereco">
+      <h2>Endereço</h2>
+      <a href="https://www.google.com.br/maps" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/mapa.png" alt="Mapa da loja">
+      </a>
+    </div>
+    <div class="footer-redes">
+      <h2>Siga nossas redes</h2>
+      <div class="footer-redes-icones">
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.png"  alt="Facebook"></a>
+        <a href="https://www.instagram.com/tavelian_beer"  target="_blank" rel="noopener noreferrer"><img src="assets/img/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/5563992130188"              target="_blank" rel="noopener noreferrer"><img src="assets/img/whatsapp.png"  alt="WhatsApp"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- main.js antes do carrinho.js (dependências) -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/carrinho.js"></script>
+
+</body>
+</html>

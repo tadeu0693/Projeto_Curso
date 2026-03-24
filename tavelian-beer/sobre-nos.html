@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavelian Beer — Sobre Nós</title>
+  <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-topo">
+      <div class="nav-marca">
+        <img src="assets/img/logo.jpg" alt="Logo Tavelian Beer">
+        <h1>Tavelian Beer</h1>
+      </div>
+      <div class="nav-login">
+        <input type="text"     placeholder="Usuário" aria-label="Usuário">
+        <input type="password" placeholder="Senha"   aria-label="Senha">
+        <button class="btn btn-login">Entrar</button>
+        <button class="btn btn-esqueci">Esqueci a senha</button>
+      </div>
+    </div>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cervejas.html">Cervejas</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+        <li><a href="cadastro.html">Área do Cliente</a></li>
+        <li>
+          <a href="carrinho.html" class="icone-carrinho">
+            🛒 Meu Carrinho
+            <span class="badge-carrinho" id="badge-carrinho"></span>
+          </a>
+        </li>
+        <li><a href="sobre-nos.html" class="ativo">Sobre Nós</a></li>
+      </ul>
+      <div class="barra-pesquisa">
+        <input type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="espacador-header"></div>
+
+  <!-- ===== CONTEÚDO ===== -->
+  <main>
+    <!-- Banner da página -->
+    <img class="sobre-nos-banner" src="assets/img/banner1.jpg" alt="Tavelian Beer">
+
+    <!-- Título da seção -->
+    <div class="sobre-nos-titulo">
+      <h2>Sobre Nós</h2>
+      <p>Conheça a história e a equipe por trás da Tavelian Beer</p>
+    </div>
+
+    <!-- Texto de apresentação da adega -->
+    <section style="max-width:800px; margin:2.5rem auto; padding:0 1.5rem; line-height:1.8; color:var(--cinza-escuro);">
+      <h3 style="font-family:var(--fonte-titulo); font-size:1.5rem; margin-bottom:1rem; color:var(--preto);">
+        Quem Somos?
+      </h3>
+      <p>
+        A <strong>Tavelian Beer</strong> nasceu da paixão por cervejas de qualidade e do desejo de trazer as melhores bebidas direto para você.
+        Somos uma adega especializada com um catálogo cuidadosamente selecionado de cervejas nacionais e importadas, drinks e muito mais.
+      </p>
+      <br>
+      <p>
+        Nosso compromisso é oferecer sempre produtos frescos, preços justos e um atendimento próximo e personalizado.
+        Pode entrar em contato pelo nosso WhatsApp — estamos sempre prontos para atender você!
+      </p>
+    </section>
+
+    <!-- Cards da equipe -->
+    <div class="secao-titulo" style="background:var(--ambar-claro);">
+      <h2>Nossa Equipe</h2>
+      <p>As pessoas que tornam a Tavelian Beer possível</p>
+    </div>
+
+    <section class="equipe" aria-label="Membros da equipe">
+
+      <!-- Membro 1 -->
+      <article class="card-membro">
+        <img src="assets/img/usuario1.jpeg" alt="Foto do membro 1">
+        <h3>Nome do Membro</h3>
+        <p>
+          Fundador e responsável pela curadoria das bebidas.
+          Apaixonado por cervejas artesanais e importadas há mais de 10 anos.
+        </p>
+      </article>
+
+      <!-- Membro 2 -->
+      <article class="card-membro">
+        <img src="assets/img/usuario2.jpeg" alt="Foto do membro 2">
+        <h3>Nome do Membro</h3>
+        <p>
+          Responsável pela logística e atendimento ao cliente.
+          Garante que cada pedido chegue perfeito até você.
+        </p>
+      </article>
+
+      <!-- Membro 3 -->
+      <article class="card-membro">
+        <img src="assets/img/usuario3.jpg" alt="Foto do membro 3">
+        <h3>Nome do Membro</h3>
+        <p>
+          Especialista em bebidas e responsável pelas promoções.
+          Sempre buscando as melhores ofertas para nossos clientes.
+        </p>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div>
+      <h2>Dúvidas?</h2>
+      <form class="footer-form" id="footer-form" novalidate>
+        <label for="footer-nome">Nome:</label>
+        <input type="text"  id="footer-nome"  placeholder="Seu nome">
+        <span class="helper-text" id="footer-nome-helper"></span>
+        <label for="footer-tel">Telefone:</label>
+        <input type="tel"   id="footer-tel"   placeholder="(00) 00000-0000">
+        <label for="footer-email">E-mail:</label>
+        <input type="email" id="footer-email" placeholder="seu@email.com">
+        <span class="helper-text" id="footer-email-helper"></span>
+        <label for="footer-msg">Mensagem:</label>
+        <textarea id="footer-msg" rows="3" placeholder="Como podemos ajudar?"></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+    <div class="footer-pagamentos">
+      <h2>Formas de Pagamento</h2>
+      <img src="assets/img/payment-mobile_2021.png" alt="Bandeiras aceitas">
+    </div>
+    <div class="footer-endereco">
+      <h2>Endereço</h2>
+      <a href="https://www.google.com.br/maps" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/mapa.png" alt="Mapa da loja">
+      </a>
+    </div>
+    <div class="footer-redes">
+      <h2>Siga nossas redes</h2>
+      <div class="footer-redes-icones">
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.png"  alt="Facebook"></a>
+        <a href="https://www.instagram.com/tavelian_beer"  target="_blank" rel="noopener noreferrer"><img src="assets/img/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/5563992130188"              target="_blank" rel="noopener noreferrer"><img src="assets/img/whatsapp.png"  alt="WhatsApp"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

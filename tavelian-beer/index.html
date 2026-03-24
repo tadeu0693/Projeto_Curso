@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavelian Beer — Home</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
+  <!-- CSS global -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER (mesmo em todas as páginas) ===== -->
+  <header>
+    <!-- Barra superior: logo, título e login -->
+    <div class="nav-topo">
+      <div class="nav-marca">
+        <img src="assets/img/logo.jpg" alt="Logo Tavelian Beer">
+        <h1>Tavelian Beer</h1>
+      </div>
+
+      <!-- Área de login -->
+      <div class="nav-login">
+        <input type="text"     placeholder="Usuário" aria-label="Usuário">
+        <input type="password" placeholder="Senha"   aria-label="Senha">
+        <button class="btn btn-login">Entrar</button>
+        <button class="btn btn-esqueci">Esqueci a senha</button>
+      </div>
+    </div>
+
+    <!-- Barra de navegação + pesquisa -->
+    <nav class="nav-menu" aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="index.html"      class="ativo">Home</a></li>
+        <li><a href="cervejas.html">Cervejas</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+        <li><a href="cadastro.html">Área do Cliente</a></li>
+        <li>
+          <a href="carrinho.html" class="icone-carrinho">
+            🛒 Meu Carrinho
+            <span class="badge-carrinho" id="badge-carrinho"></span>
+          </a>
+        </li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+      </ul>
+
+      <div class="barra-pesquisa">
+        <input type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Espaçador para compensar o header fixo -->
+  <div class="espacador-header"></div>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main>
+
+    <!-- Carrossel de banners promocionais -->
+    <section class="carrossel" aria-label="Banners promocionais">
+      <div class="carrossel-slides">
+        <div class="carrossel-slide">
+          <img src="assets/img/banner1.jpg" alt="Banner promocional 1">
+        </div>
+        <div class="carrossel-slide">
+          <img src="assets/img/banner2.jpg" alt="Banner promocional 2">
+        </div>
+        <div class="carrossel-slide">
+          <img src="assets/img/banner3.jpg" alt="Banner promocional 3">
+        </div>
+      </div>
+
+      <!-- Botões de navegação manual -->
+      <button class="carrossel-btn prev" aria-label="Banner anterior">&#8249;</button>
+      <button class="carrossel-btn next" aria-label="Próximo banner">&#8250;</button>
+
+      <!-- Indicadores (dots) -->
+      <div class="carrossel-dots">
+        <span class="dot ativo" aria-label="Banner 1"></span>
+        <span class="dot"       aria-label="Banner 2"></span>
+        <span class="dot"       aria-label="Banner 3"></span>
+      </div>
+    </section>
+
+    <!-- Título da seção de produtos -->
+    <div class="secao-titulo">
+      <h2>As Bebidas Preferidas</h2>
+      <p>Selecionamos as melhores para você!</p>
+    </div>
+
+    <!-- Grade de produtos em destaque -->
+    <section class="grade-produtos" aria-label="Produtos em destaque">
+
+      <!-- Produto 1 -->
+      <article class="card-produto">
+        <img src="assets/img/budweiser-330-6pack.png" alt="Budweiser Long Neck 6-pack">
+        <h3>Budweiser Long Neck 330ml</h3>
+        <p>Pack com 6 unidades</p>
+        <span class="preco">R$ 45,00</span>
+        <button class="btn-comprar"
+          data-id="bud-longneck-330"
+          data-nome="Budweiser Long Neck 330ml"
+          data-preco="45.00"
+          data-imagem="assets/img/budweiser-330-6pack.png">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 2 -->
+      <article class="card-produto">
+        <img src="assets/img/heineken6.jpg" alt="Heineken Long Neck 6-pack">
+        <h3>Heineken Long Neck 330ml</h3>
+        <p>Pack com 6 unidades</p>
+        <span class="preco">R$ 45,00</span>
+        <button class="btn-comprar"
+          data-id="hei-longneck-330"
+          data-nome="Heineken Long Neck 330ml"
+          data-preco="45.00"
+          data-imagem="assets/img/heineken6.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 3 -->
+      <article class="card-produto">
+        <img src="assets/img/sixpack-stella-j6.jpg" alt="Stella Artois Long Neck 6-pack">
+        <h3>Stella Artois Long Neck 330ml</h3>
+        <p>Pack com 6 unidades</p>
+        <span class="preco">R$ 45,00</span>
+        <button class="btn-comprar"
+          data-id="stella-longneck-330"
+          data-nome="Stella Artois Long Neck 330ml"
+          data-preco="45.00"
+          data-imagem="assets/img/sixpack-stella-j6.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 4 -->
+      <article class="card-produto">
+        <img src="assets/img/corona330ml.jpg" alt="Corona Long Neck">
+        <h3>Corona Long Neck 330ml</h3>
+        <p>Unidade</p>
+        <span class="preco">R$ 45,00</span>
+        <button class="btn-comprar"
+          data-id="corona-longneck-330"
+          data-nome="Corona Long Neck 330ml"
+          data-preco="45.00"
+          data-imagem="assets/img/corona330ml.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 5 -->
+      <article class="card-produto">
+        <img src="assets/img/spaten.jpg" alt="Spaten 300ml">
+        <h3>Spaten 300ml</h3>
+        <p>Unidade</p>
+        <span class="preco">R$ 8,00</span>
+        <button class="btn-comprar"
+          data-id="spaten-300"
+          data-nome="Spaten 300ml"
+          data-preco="8.00"
+          data-imagem="assets/img/spaten.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 6 -->
+      <article class="card-produto">
+        <img src="assets/img/Bohemia.jpg" alt="Bohemia Puro Malte">
+        <h3>Bohemia Puro Malte</h3>
+        <p>Unidade</p>
+        <span class="preco">R$ 4,50</span>
+        <button class="btn-comprar"
+          data-id="bohemia-puro-malte"
+          data-nome="Bohemia Puro Malte"
+          data-preco="4.50"
+          data-imagem="assets/img/Bohemia.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 7 -->
+      <article class="card-produto">
+        <img src="assets/img/skol269.jpg" alt="Skol 269ml">
+        <h3>Skol 269ml</h3>
+        <p>Unidade</p>
+        <span class="preco">R$ 3,50</span>
+        <button class="btn-comprar"
+          data-id="skol-269"
+          data-nome="Skol 269ml"
+          data-preco="3.50"
+          data-imagem="assets/img/skol269.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+      <!-- Produto 8 -->
+      <article class="card-produto">
+        <img src="assets/img/original269ML.jpg" alt="Original 269ml">
+        <h3>Original 269ml</h3>
+        <p>Unidade</p>
+        <span class="preco">R$ 4,50</span>
+        <button class="btn-comprar"
+          data-id="original-269"
+          data-nome="Original 269ml"
+          data-preco="4.50"
+          data-imagem="assets/img/original269ML.jpg">
+          Adicionar ao carrinho
+        </button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (mesmo em todas as páginas) ===== -->
+  <footer>
+    <!-- Formulário de dúvidas -->
+    <div>
+      <h2>Dúvidas?</h2>
+      <form class="footer-form" id="footer-form" novalidate>
+        <label for="footer-nome">Nome:</label>
+        <input type="text"  id="footer-nome"  name="nome"  placeholder="Seu nome">
+        <span class="helper-text" id="footer-nome-helper"></span>
+
+        <label for="footer-tel">Telefone:</label>
+        <input type="tel"   id="footer-tel"   name="telefone" placeholder="(00) 00000-0000">
+
+        <label for="footer-email">E-mail:</label>
+        <input type="email" id="footer-email" name="email" placeholder="seu@email.com">
+        <span class="helper-text" id="footer-email-helper"></span>
+
+        <label for="footer-msg">Mensagem:</label>
+        <textarea id="footer-msg" name="mensagem" rows="3" placeholder="Como podemos ajudar?"></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Formas de pagamento -->
+    <div class="footer-pagamentos">
+      <h2>Formas de Pagamento</h2>
+      <img src="assets/img/payment-mobile_2021.png" alt="Bandeiras de cartão aceitas">
+    </div>
+
+    <!-- Endereço / Mapa -->
+    <div class="footer-endereco">
+      <h2>Endereço</h2>
+      <a href="https://www.google.com.br/maps" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/mapa.png" alt="Localização da loja no mapa">
+      </a>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="footer-redes">
+      <h2>Siga nossas redes</h2>
+      <div class="footer-redes-icones">
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/tavelian_beer" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/5563992130188" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/whatsapp.png" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de confirmação (visível ao adicionar produto) -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Scripts: main.js deve vir primeiro (funções compartilhadas) -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Lógica dos botões "Adicionar ao carrinho" nesta página -->
+  <script>
+    // Captura todos os botões de compra e conecta ao sistema de carrinho
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.btn-comprar').forEach(btn => {
+        btn.addEventListener('click', () => {
+          adicionarAoCarrinho({
+            id:     btn.dataset.id,
+            nome:   btn.dataset.nome,
+            preco:  parseFloat(btn.dataset.preco),
+            imagem: btn.dataset.imagem
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

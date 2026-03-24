@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavelian Beer — Promoções</title>
+  <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Estilos específicos da página de promoções */
+
+    /* Banner de destaque */
+    .banner-promo {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Faixa de tag "PROMOÇÃO" */
+    .tag-promo {
+      display: inline-block;
+      background: var(--vermelho);
+      color: var(--branco);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 0.4rem;
+      letter-spacing: 1px;
+    }
+
+    /* Preço riscado (de) */
+    .preco-de {
+      font-size: 0.85rem;
+      color: var(--cinza-medio);
+      text-decoration: line-through;
+      margin-bottom: 0.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-topo">
+      <div class="nav-marca">
+        <img src="assets/img/logo.jpg" alt="Logo Tavelian Beer">
+        <h1>Tavelian Beer</h1>
+      </div>
+      <div class="nav-login">
+        <input type="text"     placeholder="Usuário" aria-label="Usuário">
+        <input type="password" placeholder="Senha"   aria-label="Senha">
+        <button class="btn btn-login">Entrar</button>
+        <button class="btn btn-esqueci">Esqueci a senha</button>
+      </div>
+    </div>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cervejas.html">Cervejas</a></li>
+        <li><a href="promocoes.html" class="ativo">Promoções</a></li>
+        <li><a href="cadastro.html">Área do Cliente</a></li>
+        <li>
+          <a href="carrinho.html" class="icone-carrinho">
+            🛒 Meu Carrinho
+            <span class="badge-carrinho" id="badge-carrinho"></span>
+          </a>
+        </li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+      </ul>
+      <div class="barra-pesquisa">
+        <input type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="espacador-header"></div>
+
+  <!-- ===== CONTEÚDO ===== -->
+  <main>
+    <!-- Banner de promoções -->
+    <img class="banner-promo" src="assets/img/banner1.jpg" alt="Banner de promoções Tavelian Beer">
+
+    <div class="secao-titulo">
+      <h2>🔥 Promoções</h2>
+      <p>Aproveite! Ofertas por tempo limitado</p>
+    </div>
+
+    <!-- Grade de produtos em promoção -->
+    <section class="secao-promocoes" aria-label="Produtos em promoção">
+
+      <!-- Produto promo 1 -->
+      <article class="card-promo">
+        <img src="assets/img/spaten.jpg" alt="Spaten 300ml">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Spaten 300ml</p>
+        <p class="preco-de">R$ 10,00</p>
+        <span class="preco texto-vermelho negrito">R$ 8,00</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="spaten-300"
+          data-nome="Spaten 300ml"
+          data-preco="8.00"
+          data-imagem="assets/img/spaten.jpg">
+          Comprar — R$ 8,00
+        </button>
+      </article>
+
+      <!-- Produto promo 2 -->
+      <article class="card-promo">
+        <img src="assets/img/Bohemia.jpg" alt="Bohemia Puro Malte">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Bohemia Puro Malte</p>
+        <p class="preco-de">R$ 6,00</p>
+        <span class="preco texto-vermelho negrito">R$ 4,50</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="bohemia-puro-malte"
+          data-nome="Bohemia Puro Malte"
+          data-preco="4.50"
+          data-imagem="assets/img/Bohemia.jpg">
+          Comprar — R$ 4,50
+        </button>
+      </article>
+
+      <!-- Produto promo 3 -->
+      <article class="card-promo">
+        <img src="assets/img/stela.png" alt="Stella Artois lata">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Stella Artois Lata</p>
+        <p class="preco-de">R$ 5,00</p>
+        <span class="preco texto-vermelho negrito">R$ 3,50</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="stella-lata"
+          data-nome="Stella Artois Lata"
+          data-preco="3.50"
+          data-imagem="assets/img/stela.png">
+          Comprar — R$ 3,50
+        </button>
+      </article>
+
+      <!-- Produto promo 4 -->
+      <article class="card-promo">
+        <img src="assets/img/557196-700x850.jpg" alt="Budweiser lata">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Budweiser Lata</p>
+        <p class="preco-de">R$ 6,00</p>
+        <span class="preco texto-vermelho negrito">R$ 4,50</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="bud-lata"
+          data-nome="Budweiser Lata"
+          data-preco="4.50"
+          data-imagem="assets/img/557196-700x850.jpg">
+          Comprar — R$ 4,50
+        </button>
+      </article>
+
+      <!-- Produto promo 5 -->
+      <article class="card-promo">
+        <img src="assets/img/heineken600.jpg" alt="Heineken 600ml">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Heineken 600ml</p>
+        <p class="preco-de">R$ 12,00</p>
+        <span class="preco texto-vermelho negrito">R$ 8,00</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="hei-600"
+          data-nome="Heineken 600ml"
+          data-preco="8.00"
+          data-imagem="assets/img/heineken600.jpg">
+          Comprar — R$ 8,00
+        </button>
+      </article>
+
+      <!-- Produto promo 6 -->
+      <article class="card-promo">
+        <img src="assets/img/Serra_malte.jpg" alt="Serra Malte">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Serra Malte</p>
+        <p class="preco-de">R$ 6,00</p>
+        <span class="preco texto-vermelho negrito">R$ 4,50</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="serra-malte"
+          data-nome="Serra Malte"
+          data-preco="4.50"
+          data-imagem="assets/img/Serra_malte.jpg">
+          Comprar — R$ 4,50
+        </button>
+      </article>
+
+      <!-- Produto promo 7 -->
+      <article class="card-promo">
+        <img src="assets/img/skol269.jpg" alt="Skol 269ml">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Skol 269ml</p>
+        <p class="preco-de">R$ 5,00</p>
+        <span class="preco texto-vermelho negrito">R$ 3,50</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="skol-269"
+          data-nome="Skol 269ml"
+          data-preco="3.50"
+          data-imagem="assets/img/skol269.jpg">
+          Comprar — R$ 3,50
+        </button>
+      </article>
+
+      <!-- Produto promo 8 -->
+      <article class="card-promo">
+        <img src="assets/img/original269ML.jpg" alt="Original 269ml">
+        <span class="tag-promo">PROMOÇÃO</span>
+        <p>Original 269ml</p>
+        <p class="preco-de">R$ 6,00</p>
+        <span class="preco texto-vermelho negrito">R$ 4,50</span>
+        <br><br>
+        <button class="btn-promo btn-comprar"
+          data-id="original-269"
+          data-nome="Original 269ml"
+          data-preco="4.50"
+          data-imagem="assets/img/original269ML.jpg">
+          Comprar — R$ 4,50
+        </button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div>
+      <h2>Dúvidas?</h2>
+      <form class="footer-form" id="footer-form" novalidate>
+        <label for="footer-nome">Nome:</label>
+        <input type="text"  id="footer-nome"  placeholder="Seu nome">
+        <span class="helper-text" id="footer-nome-helper"></span>
+        <label for="footer-tel">Telefone:</label>
+        <input type="tel"   id="footer-tel"   placeholder="(00) 00000-0000">
+        <label for="footer-email">E-mail:</label>
+        <input type="email" id="footer-email" placeholder="seu@email.com">
+        <span class="helper-text" id="footer-email-helper"></span>
+        <label for="footer-msg">Mensagem:</label>
+        <textarea id="footer-msg" rows="3" placeholder="Como podemos ajudar?"></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+    <div class="footer-pagamentos">
+      <h2>Formas de Pagamento</h2>
+      <img src="assets/img/payment-mobile_2021.png" alt="Bandeiras aceitas">
+    </div>
+    <div class="footer-endereco">
+      <h2>Endereço</h2>
+      <a href="https://www.google.com.br/maps" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/mapa.png" alt="Mapa da loja">
+      </a>
+    </div>
+    <div class="footer-redes">
+      <h2>Siga nossas redes</h2>
+      <div class="footer-redes-icones">
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.png"  alt="Facebook"></a>
+        <a href="https://www.instagram.com/tavelian_beer"  target="_blank" rel="noopener noreferrer"><img src="assets/img/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/5563992130188"              target="_blank" rel="noopener noreferrer"><img src="assets/img/whatsapp.png"  alt="WhatsApp"></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.btn-comprar').forEach(btn => {
+        btn.addEventListener('click', () => {
+          adicionarAoCarrinho({
+            id:     btn.dataset.id,
+            nome:   btn.dataset.nome,
+            preco:  parseFloat(btn.dataset.preco),
+            imagem: btn.dataset.imagem
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
