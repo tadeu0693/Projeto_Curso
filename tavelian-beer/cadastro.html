@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavelian Beer — Área do Cliente</title>
+  <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Layout da página de cadastro */
+    .pagina-cadastro {
+      background-color: var(--ambar-claro);
+      min-height: calc(100vh - var(--header-height) - 220px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+    }
+
+    /* Formulário de cadastro */
+    #form-cadastro {
+      background: var(--amarelo);
+      border-radius: 20px;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.15);
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    #form-cadastro h2 {
+      font-family: var(--fonte-titulo);
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-topo">
+      <div class="nav-marca">
+        <img src="assets/img/logo.jpg" alt="Logo Tavelian Beer">
+        <h1>Tavelian Beer</h1>
+      </div>
+      <div class="nav-login">
+        <input type="text"     placeholder="Usuário" aria-label="Usuário">
+        <input type="password" placeholder="Senha"   aria-label="Senha">
+        <button class="btn btn-login">Entrar</button>
+        <button class="btn btn-esqueci">Esqueci a senha</button>
+      </div>
+    </div>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cervejas.html">Cervejas</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+        <li><a href="cadastro.html" class="ativo">Área do Cliente</a></li>
+        <li>
+          <a href="carrinho.html" class="icone-carrinho">
+            🛒 Meu Carrinho
+            <span class="badge-carrinho" id="badge-carrinho"></span>
+          </a>
+        </li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+      </ul>
+      <div class="barra-pesquisa">
+        <input type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="espacador-header"></div>
+
+  <!-- ===== CONTEÚDO ===== -->
+  <main class="pagina-cadastro">
+    <form id="form-cadastro" novalidate>
+      <h2>Cadastre-se</h2>
+
+      <!-- Nome -->
+      <div class="campo-grupo">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name">
+        <span class="mensagem-erro" id="erro-nome"></span>
+      </div>
+
+      <!-- CPF -->
+      <div class="campo-grupo">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" inputmode="numeric">
+        <span class="mensagem-erro" id="erro-cpf"></span>
+      </div>
+
+      <!-- Data de nascimento -->
+      <div class="campo-grupo">
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" max="">
+        <span class="mensagem-erro" id="erro-nascimento"></span>
+      </div>
+
+      <!-- E-mail -->
+      <div class="campo-grupo">
+        <label for="email-cad">E-mail:</label>
+        <input type="email" id="email-cad" name="email" placeholder="seu@email.com" autocomplete="email">
+        <span class="mensagem-erro" id="erro-email"></span>
+      </div>
+
+      <!-- Senha -->
+      <div class="campo-grupo">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres" autocomplete="new-password">
+        <span class="mensagem-erro" id="erro-senha"></span>
+      </div>
+
+      <!-- Confirmar senha -->
+      <div class="campo-grupo">
+        <label for="confirma-senha">Confirmar senha:</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Repita a senha" autocomplete="new-password">
+        <span class="mensagem-erro" id="erro-confirma-senha"></span>
+      </div>
+
+      <!-- Mensagem de sucesso -->
+      <p class="mensagem-sucesso" id="mensagem-sucesso"></p>
+
+      <button type="submit" class="btn-submit">Criar conta</button>
+    </form>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div>
+      <h2>Dúvidas?</h2>
+      <form class="footer-form" id="footer-form" novalidate>
+        <label for="footer-nome">Nome:</label>
+        <input type="text"  id="footer-nome"  placeholder="Seu nome">
+        <span class="helper-text" id="footer-nome-helper"></span>
+        <label for="footer-tel">Telefone:</label>
+        <input type="tel"   id="footer-tel"   placeholder="(00) 00000-0000">
+        <label for="footer-email">E-mail:</label>
+        <input type="email" id="footer-email" placeholder="seu@email.com">
+        <span class="helper-text" id="footer-email-helper"></span>
+        <label for="footer-msg">Mensagem:</label>
+        <textarea id="footer-msg" rows="3" placeholder="Como podemos ajudar?"></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+    <div class="footer-pagamentos">
+      <h2>Formas de Pagamento</h2>
+      <img src="assets/img/payment-mobile_2021.png" alt="Bandeiras aceitas">
+    </div>
+    <div class="footer-endereco">
+      <h2>Endereço</h2>
+      <a href="https://www.google.com.br/maps" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/mapa.png" alt="Mapa da loja">
+      </a>
+    </div>
+    <div class="footer-redes">
+      <h2>Siga nossas redes</h2>
+      <div class="footer-redes-icones">
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.png"  alt="Facebook"></a>
+        <a href="https://www.instagram.com/tavelian_beer"  target="_blank" rel="noopener noreferrer"><img src="assets/img/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/5563992130188"              target="_blank" rel="noopener noreferrer"><img src="assets/img/whatsapp.png"  alt="WhatsApp"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cadastro.js"></script>
+
+</body>
+</html>
